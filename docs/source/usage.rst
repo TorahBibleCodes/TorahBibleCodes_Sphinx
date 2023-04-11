@@ -22,22 +22,21 @@ There are criminal squatters who are infringing on our TorahBibleCodes internati
    pip install TorahBibleCodes
 
 
-WARNING
+RUN THE APP
 ----------------
 
 To retrieve a list of random ingredients,
 you can use the Global Search Object (gso)'s ``gso.Letters`` property:
 
 
-
-Activate your ``ipython`` interactive python development environment by typing ``"ipython"`` at your Python command prompt.
+Activate your ``ipython`` interactive python development environment by typing ``ipython`` at your Python command prompt.
 
 Otherwise, :py:func:`gso.Letters` will raise an exception.
 
 
 For example:
 
->>> ipython
+C:\python> ipython
 In [1]: %run p.py
 WITHIN FUNCTION:  BEGIN FUNCTION #1 - GET USER INPUT; CHOOSE TEXT TO SEARCH
 Please select text to search:
