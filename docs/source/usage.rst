@@ -18,18 +18,24 @@ Creating recipes
 To retrieve a list of random ingredients,
 you can use the Global Search Object (gso)'s ``gso.Letters`` property:
 
-.. autofunction:: lumache.get_random_ingredients
+.. autofunction:: gso.Letters
 
-The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
-or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
-will raise an exception.
+Activate your ``ipython`` interactive python development environment by typing ``"ipython"`` at your Python command prompt.
+
+Otherwise, :py:func:`gso.Letters` will raise an exception.
 
 .. autoexception:: lumache.InvalidKindError
 
 For example:
 
 >>> ipython
+
 In [1]: %run p.py
+
+WITHIN FUNCTION:  BEGIN FUNCTION #1 - GET USER INPUT; CHOOSE TEXT TO SEARCH
+
+Please select text to search:
+
 1 - Genesis
 2 - Exodus
 3 - Leviticus
