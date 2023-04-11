@@ -1,9 +1,9 @@
-Welcome to Lumache's documentation!
+Welcome to TorahBibleCodes Sphinx documentation!
 ===================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
+**TorahBibleCodes** is a Free, Open-Source Python Project
+that enables you to search for hidden Torah Bible Codes in the Hebrew Torah and Bible.
+Please visit our web site <https://TorahBibleCodes.com/>`_
 and offers a *simple* and *intuitive* API.
 
 Check out the :doc:`usage` section for further information, including
