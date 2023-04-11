@@ -34,9 +34,9 @@ Activate your ``ipython`` interactive python development environment by typing `
 Otherwise, :py:func:`gso.Letters` will raise an exception.
 
 
-For example::
+For example:
 
-C:\python> ipython
+>>> ipython
 In [1]: %run p.py
 WITHIN FUNCTION:  BEGIN FUNCTION #1 - GET USER INPUT; CHOOSE TEXT TO SEARCH
 Please select text to search:
