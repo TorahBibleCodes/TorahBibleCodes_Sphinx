@@ -29,13 +29,9 @@ Otherwise, :py:func:`gso.Letters` will raise an exception.
 For example:
 
 >>> ipython
-
 In [1]: %run p.py
-
 WITHIN FUNCTION:  BEGIN FUNCTION #1 - GET USER INPUT; CHOOSE TEXT TO SEARCH
-
 Please select text to search:
-
 1 - Genesis
 2 - Exodus
 3 - Leviticus
