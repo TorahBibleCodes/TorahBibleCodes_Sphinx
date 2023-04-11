@@ -12,7 +12,17 @@ To use TorahBibleCodes, first install it on your local computer by downloading t
 
    git clone https://github.com/TorahBibleCodes/TorahBibleCodes.git
 
-Creating recipes
+WARNING
+----------------
+
+There are criminal squatters who are infringing on our TorahBibleCodes international copyright. We are not associated with any current PyPi projects.  Do not PIP INSTALL - DO SO ONLY AT YOUR OWN RISK OF VIRUSES AND MALICIOUS CODE:
+
+.. code-block:: console
+
+   pip install TorahBibleCodes
+
+
+WARNING
 ----------------
 
 To retrieve a list of random ingredients,
