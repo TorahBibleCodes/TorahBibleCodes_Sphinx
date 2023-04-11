@@ -28,13 +28,12 @@ WARNING
 To retrieve a list of random ingredients,
 you can use the Global Search Object (gso)'s ``gso.Letters`` property:
 
-.. autofunction:: gso.Letters
+
 
 Activate your ``ipython`` interactive python development environment by typing ``"ipython"`` at your Python command prompt.
 
 Otherwise, :py:func:`gso.Letters` will raise an exception.
 
-.. autoexception:: lumache.InvalidKindError
 
 For example:
 
@@ -85,7 +84,12 @@ Please select text to search:
 41 - Prophets (Nevi'im)
 42 - Writings (K'tuvim)
 43 - Hebrew Bible (Tanach)
-
-
 Please select text to search:
+
+WARNING
+----------------
+
+To retrieve a list of random ingredients,
+you can use the Global Search Object (gso)'s ``gso.Letters`` property:
+
 
