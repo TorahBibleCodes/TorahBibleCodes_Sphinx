@@ -6,7 +6,7 @@ Usage
 Installation
 ------------
 
-To use TorahBibleCodes, first install it on your local computer by downloading the ZIP file or cloning the GitHub repo:
+To use TorahBibleCodes, first install Python on your local computer, and then download the TorahBibleCodes GitHub Repo ZIP file or clone the GitHub repo to your local computer.
 
 .. code-block:: console
 
