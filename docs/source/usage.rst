@@ -15,7 +15,7 @@ To use TorahBibleCodes, first install Python on your local computer, and then do
 WARNING
 ----------------
 
-There are criminal squatters who are infringing on our TorahBibleCodes international copyright. We are not associated with any current PyPi projects.  Do not PIP INSTALL - DO SO ONLY AT YOUR OWN RISK OF VIRUSES AND MALICIOUS CODE:
+There are criminal squatters who are infringing on our TorahBibleCodes international copyright. We are not associated with any current PyPi projects.  DO NOT PIP INSTALL - YOU DO SO AT YOUR OWN RISK OF VIRUSES AND MALICIOUS CODE BY CRIMINAL SQUATTERS WHO ARE SQUATTING, INFRINGING, AND VIOLATING THE TORAHBIBLECODES COPYRIGHT.
 
 .. code-block:: console
 
