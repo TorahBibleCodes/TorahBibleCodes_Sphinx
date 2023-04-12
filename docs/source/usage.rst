@@ -22,24 +22,30 @@ There are criminal squatters who are infringing on our TorahBibleCodes internati
    pip install TorahBibleCodes
 
 
-RUN THE APP
+Run the App
 ----------------
 
-After installing Python on your local computer, and after cloning the TorahBibleCodes GitHub Repo:
+After installing Python as well as cloning the TorahBibleCodes GitHub Repo to your local computer:
 
 Navigate to the local folder to where you have cloned TorahBibleCodes.
 
-Activate your ``ipython`` interactive python development environment by typing ``ipython`` at your Python command prompt.
+Open a Command Line Interface (CLI) such as Windows PowerShell or the equivalent on other Apple and Linux devices.
 
-Otherwise, :py:func:`gso.Letters` will raise an exception.
+Activate your ``ipython`` interactive python development environment by typing ``ipython`` at your CLI prompt.
+
+Otherwise, :py:func:`fn_GetUserInput` will raise an exception.
 
 
 For example::
 
    C:\TorahBibleCodes> ipython
+   
    In [1]: %run p.py
+   
    WITHIN FUNCTION:  BEGIN FUNCTION #1 - GET USER INPUT; CHOOSE TEXT TO SEARCH
+   
    Please select text to search:
+   
    1 - Genesis
    2 - Exodus
    3 - Leviticus
@@ -83,6 +89,7 @@ For example::
    41 - Prophets (Nevi'im)
    42 - Writings (K'tuvim)
    43 - Hebrew Bible (Tanach)
+   
    Please select text to search:
 
 WARNING
