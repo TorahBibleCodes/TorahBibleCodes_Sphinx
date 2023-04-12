@@ -33,7 +33,9 @@ Open a Command Line Interface (CLI) such as Windows PowerShell or the equivalent
 
 Activate your ``ipython`` interactive python development environment by typing ``ipython`` at your CLI prompt.
 
-Otherwise, :py:func:`fn_GetUserInput` will raise an exception.
+After your IPython development environment has been activated in the CLI Window, type ``%run p.py`` at the IPython command prompt.
+
+You will be prompted to select a text from the Hebrew Bible via the :py:func:`fn_GetUserInput` function.
 
 
 For example::
