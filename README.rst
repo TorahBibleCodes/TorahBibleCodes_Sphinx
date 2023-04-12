@@ -1,8 +1,7 @@
-Template for the Read the Docs tutorial
+TorahBibleCodes Sphinx Documentation for Python
 =======================================
 
-This GitHub template includes fictional Python library
-with some basic Sphinx docs.
+This GitHub hosts the open-source documentation for the TorahBibleCodes project.
 
 Read the tutorial here:
 
