@@ -148,7 +148,7 @@ Each verse (and letter) of the thirty-nine (39) books of the Hebrew Bible is acc
    DS[1,1,2] --> GENESIS 1:2 - 1st Book, 1st Chapter, 2nd Verse
    DS[1,1,3] --> GENESIS 1:3 - 1st Book, 1st Chapter, 3rd Verse
    
-``D`` Object - Dictionary of Verses/Letters, accessible as data with a 3-digit Tuple Key + sub-element (0-indexed) in sequence of letters within each verse.
+``D`` Object - Dictionary of Verses/Letters, accessible as data with a 3-digit Tuple Key + sub-element (0-indexed) in sequence of letters within each verse.::
 
    D[1,1,1][0] --> 1st element (letter) in string/verse sequence --> 'ב'
    D[1,1,1][1] --> 2nd element (letter) in string/verse sequence --> 'ר'
