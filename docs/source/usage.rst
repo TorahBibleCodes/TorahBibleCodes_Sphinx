@@ -88,13 +88,13 @@ For example::
    38 - I Chronicles
    39 - II Chronicles
    40 - Pentateuch (Torah)
-   41 - Prophets (Nevi\'im)
-   42 - Writings (K\'tuvim)
+   41 - Prophets (Nevi'im)
+   42 - Writings (K'tuvim)
    43 - Hebrew Bible (Tanach)
    
    Please select text to search:
 
-WARNING
+Equidistant Letter Sequences (ELSs)
 ----------------
 
 To retrieve a list of random ingredients,
