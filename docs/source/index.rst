@@ -8,7 +8,7 @@ Please visit our web site https://TorahBibleCodes.com
 
 We offer a *simple* and *intuitive* App (and API) that is both *free* and *open-source*.
 
-HOMEPAGE URLs: https://TorahBibleCodes.com
+HOMEPAGE URL: https://TorahBibleCodes.com
 
 GITHUB: https://github.com/torahbiblecodes
 
