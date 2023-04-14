@@ -3,6 +3,6 @@ TorahBibleCodes Sphinx Documentation for Python
 
 This GitHub hosts the open-source documentation for the TorahBibleCodes project.
 
-Read the tutorial here:
+Read the TorahBibleCodes documentation here:
 
-https://docs.readthedocs.io/en/stable/tutorial/
+https://torahbiblecodes-sphinx.readthedocs.io/en/latest/
