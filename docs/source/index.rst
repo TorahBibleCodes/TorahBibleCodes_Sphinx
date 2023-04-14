@@ -6,17 +6,13 @@ that enables you to search for hidden Torah Bible Codes in the Hebrew Torah and 
 
 Please visit our web site https://TorahBibleCodes.com
 
-We offer a *simple* and *intuitive* API that is both *free* and *open-source*.
+We offer a *simple* and *intuitive* App (and API) that is both *free* and *open-source*.
 
-HOMEPAGE URLs:
-https://TorahBibleCodes.com
-https://www.TorahBibleCodes.com
+HOMEPAGE URLs: https://TorahBibleCodes.com
 
-GITHUB:
-https://github.com/torahbiblecodes
+GITHUB: https://github.com/torahbiblecodes
 
-STACKOVERFLOW:
-https://stackoverflow.com/users/8911652/torahbiblecodes
+STACKOVERFLOW: https://stackoverflow.com/users/8911652/torahbiblecodes
 
 TWITTER: @TorahBibleCodes https://twitter.com/TorahBibleCodes
 
