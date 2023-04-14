@@ -103,6 +103,11 @@ The essential objects in TorahBibleCodes are native Python data objects (i.e. st
 :py:func:`D`
 :py:func:`FN_TEST`
 
+These Python data objects are subsequently incorporated with a custom Global Search Object :py:func:`GSO`::
+
+   gso = GSO()
+
+
 ``gso.S``
 ``gso.D``
 ``gso.DS``
