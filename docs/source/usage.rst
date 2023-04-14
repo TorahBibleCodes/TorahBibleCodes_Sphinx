@@ -97,7 +97,19 @@ For example::
 Equidistant Letter Sequences (ELSs)
 ----------------
 
-To retrieve a list of random ingredients,
+The essential objects in TorahBibleCodes are native Python data objects (i.e. strings, lists, tuples, and dictionaries).
+
+:py:func:`S`
+:py:func:`D`
+:py:func:`FN_TEST`
+
+``gso.S``
+``gso.D``
+``gso.DS``
+``gso.DL``
+``gso.D5``
+``gso.D5K``
+
 you can use the Global Search Object (gso)'s ``gso.Letters`` property:
 
 
