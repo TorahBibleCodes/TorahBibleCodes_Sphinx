@@ -99,9 +99,25 @@ Equidistant Letter Sequences (ELSs)
 
 The essential objects in TorahBibleCodes are native Python data objects (i.e. strings, lists, tuples, and dictionaries).
 
-:py:func:`S`
-:py:func:`D`
-:py:func:`FN_TEST`
+For any text chosen (e.g. Genesis, Exodus, Leviticus, Numbers, Deuteronomy, or all five (5) together, or all twenty-one (21) books of the Prophets, or all thirteen (13) books of the Writings, or all thirty-nine (39) books of the entire Hebrew Bible), the text is parsed and a Python dictionary D (and DS) is created that allows one to access each verse by 3-digit Tuple Key (Book, Chapter, Verse). After choosing the text(s) to be searched, a Python dictionary D (and DS) is created to contain each verse - accessible by 3-digit Tuple Key.
+
+D Object - Dictionary of Verses (with No Spaces), accessible as data with a 3-digit Tuple Key
+
+``D`` Object: Dictionary of Verses Object ::
+
+   D[1,1,1] --> GENESIS 1:1 - 1st Book, 1st Chapter, 1st Verse
+   D[1,1,2] --> GENESIS 1:2 - 1st Book, 1st Chapter, 2nd Verse
+   D[1,1,3] --> GENESIS 1:3 - 1st Book, 1st Chapter, 3rd Verse
+
+
+
+Data Objects (and derivative Data Objects) with Info for Each Letter in Text:
+
+Custom Letter Objects (LO)
+
+Custom Equidistant Letter Objects (ELSO)
+
+Custom Global Search Object (GSO)
 
 These Python data objects are subsequently incorporated with a custom Global Search Object :py:func:`GSO`::
 
