@@ -233,6 +233,30 @@ From the ``D`` and ``DS`` Objects, all other Python Data Objects are derived:
    DL[5,34,12,46] --> 'א'
    DL[5,34,12,47] --> 'ל'
 
+   ``D5`` Object - Dictionary of Letters (with 5-digit key) with 5th element of tuple being the position of letter in total sequence of text...(i.e. either all five (5) texts of the Torah together (304850 letters), or one (1) text only, or all twenty-one (21) texts of the Prophets, or all thirteen (13) texts of the Writings, or all thirty-nine (39) texts of the entire Hebrew Bible together).::
+
+   D5[1, 1, 1, 1, 1] --> 'ב'
+   D5[1, 1, 1, 2, 2] --> 'ר'
+   D5[1, 1, 1, 3, 3] --> 'א'
+   D5[1, 1, 1, 4, 4] --> 'ש'
+   D5[1, 1, 1, 5, 5] --> 'י'
+   D5[1, 1, 1, 6, 6] --> 'ת'
+
+   D5[5, 34, 12, 43, 304846] --> 'י'
+   D5[5, 34, 12, 44, 304847] --> 'ש'
+   D5[5, 34, 12, 45, 304848] --> 'ר'
+   D5[5, 34, 12, 46, 304849] --> 'א'
+   D5[5, 34, 12, 47, 304850] --> 'ל'
+
+   ``L`` Object - List of Letters::
+
+   L[0:6] --> ['ב', 'ר', 'א', 'ש', 'י', 'ת']
+   L[-5:] --> ['י', 'ש', 'ר', 'א', 'ל']
+
+   ``S`` Object - String of Letters::
+
+   S[0:6] --> 'בראשית'
+   S[-5:] --> 'ישראל'
 
 Custom Letter Objects (LO)
 
