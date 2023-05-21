@@ -14,13 +14,13 @@ To use TorahBibleCodes:
 
 .. code-block:: console
 
-   pip install ipython
+   C:\python> pip install ipython
    
 3.) DOWNLOAD the TorahBibleCodes GitHub Repo ZIP file or clone the GitHub repo to your local computer.
 
 .. code-block:: console
 
-   git clone https://github.com/TorahBibleCodes/TorahBibleCodes.git
+   C:\GitHubRepoClones> git clone https://github.com/TorahBibleCodes/TorahBibleCodes.git
    
 
 WARNING
@@ -38,13 +38,15 @@ Run the App
 
 After installing Python as well as cloning the TorahBibleCodes GitHub Repo to your local computer:
 
-Navigate to the local folder to where you have cloned TorahBibleCodes.
+1.) Navigate to the local folder to where you have cloned TorahBibleCodes.
 
-Open a Command Line Interface (CLI) such as Windows PowerShell or the equivalent on other Apple and Linux devices.
+2.) Open a Command Line Interface (CLI) such as Windows PowerShell or the equivalent on other Apple and Linux devices.
 
-Activate your ``ipython`` interactive python development environment by typing ``ipython`` at your CLI prompt.
+3.) Activate your ``ipython`` interactive python development environment by typing ``ipython`` at your CLI prompt.
 
-After your IPython development environment has been activated in the CLI Window, type ``%run p.py`` at the IPython command prompt.
+After your IPython development environment has been activated in the CLI Window:
+
+4.) Type ``%run p.py`` at the IPython command prompt.
 
 You will be prompted to select a text from the Hebrew Bible via the :py:func:`fn_GetUserInput` function.
 
