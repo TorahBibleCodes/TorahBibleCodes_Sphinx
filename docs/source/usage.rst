@@ -110,7 +110,7 @@ Equidistant Letter Sequences (ELSs)
 
 Witztum, Rips, and Rosenberg (WRR) define an Equidistant Letter Sequence (ELS) as a sequence of letters in the text whose positions - not counting spaces - form an arithmetic progression. That is to say the letters are found at the positions
 
-*n*, (*n* + *d*), (*n* + 2*d*), (n + 3*d*) ..., (*n* + (*k* - 1)*d*)
+n, (n + d), (n + 2d), (n + 3d) ..., (n + (k - 1)d)
 
 WRR define *n* as the start, *d* as the skip between letters in the search-term, and *k* as the length of the ELS. These three parameters uniquely identify the ELS which is denoted (*n*, *d*, *k*).
 
@@ -118,14 +118,14 @@ For example:
 
 ELS = “משיח” == “Mashiach” == “Messiah”
 
-k = length of an ELS Search-Term, ELS, i.e. the number of letters in the word; here: The length
-k of ELS is 4.
+*k* = length of an ELS Search-Term, ELS, i.e. the number of letters in the word; here: The length
+*k* of ELS is 4.
 
-d = equidistant skip distance(s) between each letter in the ELS successfully found within the
-selected text that is searched; For each instance of a letter found at index number position n, there may
-likely be multiple instances of skip distances d possible to the next letter in that ELS.
+*d* = equidistant skip distance(s) between each letter in the ELS successfully found within the
+selected text that is searched; For each instance of a letter found at index number position *n*, there may
+potentially be multiple instances of skip distances *d* possible to the next letter(s) in that ELS.
 
-n = index number starting position for each instance for each first (or last) letter in the ELS; For
+*n* = index number starting position for each instance for each first (or last) letter in the ELS; For
 example, if you are searching for a word that begins (or ends) with the letter Mem (מ) in the text, index
 number n is the index position number for each instance found of the letter Mem (מ), and for each
 instance of these letters Mem (מ) found, there is the potential to find multiple ELSs beginning (or
