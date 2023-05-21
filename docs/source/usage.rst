@@ -30,7 +30,7 @@ There are criminal squatters who are infringing on our TorahBibleCodes internati
 
 .. code-block:: console
 
-   pip install TorahBibleCodes ## DANGER ## DO NOT PIP INSTALL ## INSTALL AT YOUR OWN RISK! 
+   ## DANGER pip install TorahBibleCodes ## DANGER ## DO NOT PIP INSTALL ## INSTALL AT YOUR OWN RISK! 
 
 
 Run the App
