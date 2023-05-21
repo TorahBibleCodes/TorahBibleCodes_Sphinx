@@ -138,9 +138,9 @@ Program Concepts: Objects - D (DS), DL, D5, D5K, L (LLL), S (SSS), N (NW), W (DW
 
 The essential objects in TorahBibleCodes are native Python data objects (i.e. strings, lists, tuples, and dictionaries).
 
-For any text chosen (e.g. Genesis, Exodus, Leviticus, Numbers, Deuteronomy, or all five (5) together, or all twenty-one (21) books of the Prophets, or all thirteen (13) books of the Writings, or all thirty-nine (39) books of the entire Hebrew Bible), the text is parsed and a Python dictionary objects ``D`` and ``DS`` are created that allow one to access each verse by 3-digit Tuple Key (Book, Chapter, Verse). After choosing the text(s) to be searched, a Python dictionary ``D`` (with no spaces) and ``DS`` (with spaces) are created to contain each verse - accessible by 3-digit Tuple Key.
+For any text chosen (e.g. Genesis, Exodus, Leviticus, Numbers, Deuteronomy, or all five (5) together, or all twenty-one (21) books of the Prophets, or all thirteen (13) books of the Writings, or all thirty-nine (39) books of the entire Hebrew Bible), the text is parsed and Python dictionary objects ``D`` and ``DS`` are created that allow one to access each verse by 3-digit Tuple Key (Book, Chapter, Verse). After choosing the text(s) to be searched, a Python dictionary ``D`` (with no spaces) and ``DS`` (with spaces) are created to contain each verse - accessible by 3-digit Tuple Key.
 
-Each verse (and letter) of the thirty-nine (39) books of the Hebrew Bible is accessible via the Python dictionary ``D`` and ``DS``) with a unique 3-digit Tuple Key as per following examples:
+Each verse (and letter) of the thirty-nine (39) books of the Hebrew Bible is accessible via the Python dictionaries ``D`` and ``DS`` with a unique 3-digit Tuple Key as per following examples:
 
 ``D`` Object - Dictionary of Verses (with No Spaces), accessible as data with a 3-digit Tuple Key
 
@@ -195,21 +195,21 @@ Each verse (and letter) of the thirty-nine (39) books of the Hebrew Bible is acc
    DS[1,1,1] == 'בראשית ברא אלהים את השמים ואת הארץ'
    DS[1,1,7] == 'ויעש אלהים את הרקיע ויבדל בין המים אשר מתחת לרקיע ובין המים אשר מעל לרקיע ויהי כן'
    DS[1,50,26] == 'וימת יוסף בן מאה ועשר שנים ויחנטו אתו ויישם בארון במצרים'
-   DS[2,1,1] == 'ואלהשמותבניישראלהבאיםמצרימהאתיעקבאישוביתובאו'
-   DS[2,40,38] == 'כיענןיהוהעלהמשכןיומםואשתהיהלילהבולעיניכלביתישראלבכלמסעיהם'
-   DS[3,1,1] == 'ויקראאלמשהוידבריהוהאליומאהלמועדלאמר'
-   DS[3,27,34] == 'אלההמצותאשרצוהיהוהאתמשהאלבניישראלבהרסיני'
-   DS[4,1,1] == 'וידבריהוהאלמשהבמדברסיניבאהלמועדבאחדלחדשהשניבשנההשניתלצאתםמארץמצריםלאמר'
-   DS[4,36,13] == 'אלההמצותוהמשפטיםאשרצוהיהוהבידמשהאלבניישראלבערבתמואבעלירדןירחו'
-   DS[5,1,1] == 'אלההדבריםאשרדברמשהאלכלישראלבעברהירדןבמדברבערבהמולסוףביןפארןוביןתפלולבןוחצרתודיזהב'
-   DS[5,34,12] == 'ולכלהידהחזקהולכלהמוראהגדולאשרעשהמשהלעיניכלישראל'
+   DS[2,1,1] == 'ואלה שמות בני ישראל הבאים מצרימה את יעקב איש וביתו באו'
+   DS[2,40,38] == 'כי ענן יהוה על המשכן יומם ואש תהיה לילה בו לעיני כל בית ישראל בכל מסעיהם'
+   DS[3,1,1] == 'ויקרא אל משה וידבר יהוה אליו מאהל מועד לאמר'
+   DS[3,27,34] == 'אלה המצות אשר צוה יהוה את משה אל בני ישראל בהר סיני'
+   DS[4,1,1] == 'וידבר יהוה אל משה במדבר סיני באהל מועד באחד לחדש השני בשנה השנית לצאתם מארץ מצרים לאמר'
+   DS[4,36,13] == 'אלה המצות והמשפטים אשר צוה יהוה ביד משה אל בני ישראל בערבת מואב על ירדן ירחו'
+   DS[5,1,1] == 'אלה הדברים אשר דבר משה אל כל ישראל בעבר הירדן במדבר בערבה מול סוף בין פארן ובין תפל ולבן וחצרת ודי זהב'
+   DS[5,34,12] == 'ולכל היד החזקה ולכל המורא הגדול אשר עשה משה לעיני כל ישראל'
    
 ``D`` Object - Dictionary of Verses/Letters, accessible as data with a 3-digit Tuple Key + sub-element (0-indexed) in sequence of letters within each verse.::
 
    D[1,1,1][0] --> 1st element (letter) in string/verse sequence --> 'ב'
    D[1,1,1][1] --> 2nd element (letter) in string/verse sequence --> 'ר'
    D[1,1,1][2] --> 3rd element (letter) in string/verse sequence --> 'א'
-   D[1,1,1][-1] --> Last element in string/verse sequence...
+   D[1,1,1][-1] --> Last element (letter) in string/verse sequence --> 'ץ'
 
 Data Objects (and derivative Data Objects) with Info for Each Letter in Text:
 
