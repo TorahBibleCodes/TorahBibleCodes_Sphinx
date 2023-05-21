@@ -8,9 +8,9 @@ Installation
 
 To use TorahBibleCodes:
 
-1.) DOWNLOAD and INSTALL PYTHON: https://www.python.org/downloads/
+1.) DOWNLOAD and INSTALL PYTHON on your local computer: https://www.python.org/downloads/
 
-2.) INSTALL ``ipython`` via ``pip install``.
+2.) In the folder where Python has been installed, open a Command Line Interface (CLI), PowerShell (via SHIFT-RIGHT-MOUSE-CLICK IN FOLDER), etc. and then INSTALL ``ipython`` via ``pip install`` at the command prompt.
 
 .. code-block:: console
 
