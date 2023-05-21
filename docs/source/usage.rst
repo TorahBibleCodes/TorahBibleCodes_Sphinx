@@ -146,9 +146,7 @@ For any text chosen (e.g. Genesis, Exodus, Leviticus, Numbers, Deuteronomy, or a
 
 Each verse (and letter) of the thirty-nine (39) books of the Hebrew Bible is accessible via the Python dictionaries ``D`` and ``DS`` with a unique 3-digit Tuple Key as per following examples:
 
-``D`` Object - Dictionary of Verses (with No Spaces), accessible as data with a 3-digit Tuple Key
-
-``D`` Object: Dictionary of Verses Object ::
+``D`` Object - Dictionary of Verses (with No Spaces), accessible as data with a 3-digit Tuple Key::
 
    D[1,1,1] --> GENESIS 1:1 - 1st Book, 1st Chapter, 1st Verse
    D[1,1,2] --> GENESIS 1:2 - 1st Book, 1st Chapter, 2nd Verse
@@ -215,7 +213,25 @@ Each verse (and letter) of the thirty-nine (39) books of the Hebrew Bible is acc
    D[1,1,1][2] --> 3rd element (letter) in string/verse sequence --> 'א'
    D[1,1,1][-1] --> Last element (letter) in string/verse sequence --> 'ץ'
 
-Data Objects (and derivative Data Objects) with Info for Each Letter in Text:
+Data Objects (and derivative Data Objects)
+----------------
+
+From the ``D`` and ``DS`` Objects, all other Python Data Objects are derived:
+
+``DL`` Object - Dictionary of Letters (with 4-digit key) with 4th element of tuple being the (non-0-indexed; 1-indexed) position of letter in verse::
+
+   DL[1, 1, 1, 1] --> 'ב'
+   DL[1, 1, 1, 2] --> 'ר'
+   DL[1, 1, 1, 3] --> 'א'
+   DL[1, 1, 1, 4] --> 'ש'
+   DL[1, 1, 1, 5] --> 'י'
+   DL[1, 1, 1, 6] --> 'ת'
+
+   DL[5,34,12,43] --> 'י'
+   DL[5,34,12,44] --> 'ש'
+   DL[5,34,12,45] --> 'ר'
+   DL[5,34,12,46] --> 'א'
+   DL[5,34,12,47] --> 'ל'
 
 
 Custom Letter Objects (LO)
