@@ -6,7 +6,7 @@ Usage
 Installation
 ------------
 
-To use TorahBibleCodes, first dowloand and install Python on your local computer:
+To use TorahBibleCodes, first dowload and install Python on your local computer:
 
 DOWNLOAD and INSTALL PYTHON: https://www.python.org/downloads/
 
