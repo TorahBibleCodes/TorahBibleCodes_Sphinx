@@ -116,10 +116,12 @@ WRR define *n* as the start, *d* as the skip between letters in the search-term,
 
 For example:
 
-ELS = “משיח” == “Mashiach” == “Messiah”
+ELS1 = “משיח” == “Mashiach” == “Messiah”
+
+ELS2 = “המשיח” == “HaMashiach” == “The Messiah”
 
 *k* = length of an ELS Search-Term, ELS, i.e. the number of letters in the word; here: The length
-*k* of ELS is 4.
+*k* of ELS1 is 4; The length *k* of ELS2 is 5.
 
 *d* = equidistant skip distance(s) between each letter in the ELS successfully found within the
 selected text that is searched; For each instance of a letter found at index number position *n*, there may
