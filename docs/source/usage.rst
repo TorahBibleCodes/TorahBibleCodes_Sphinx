@@ -8,17 +8,15 @@ Installation
 
 To use TorahBibleCodes, first dowload and install Python on your local computer:
 
-DOWNLOAD and INSTALL PYTHON: https://www.python.org/downloads/
+1.) DOWNLOAD and INSTALL PYTHON: https://www.python.org/downloads/
 
-After installing Python, then 'pip install' ``ipython``::
-
-Install ``ipython``
+2.) INSTALL ``ipython`` via ``pip install``  ::
 
 .. code-block:: console
 
    pip install ipython
    
-and then download the TorahBibleCodes GitHub Repo ZIP file or clone the GitHub repo to your local computer.
+3.) DOWNLOAD the TorahBibleCodes GitHub Repo ZIP file or clone the GitHub repo to your local computer.
 
 .. code-block:: console
 
