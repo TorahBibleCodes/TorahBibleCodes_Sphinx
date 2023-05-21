@@ -10,7 +10,7 @@ To use TorahBibleCodes:
 
 1.) DOWNLOAD and INSTALL PYTHON: https://www.python.org/downloads/
 
-2.) INSTALL ``ipython`` via ``pip install``
+2.) INSTALL ``ipython`` via ``pip install``.
 
 .. code-block:: console
 
