@@ -218,7 +218,7 @@ Data Objects (and derivative Data Objects)
 
 From the ``D`` and ``DS`` Objects, all other Python Data Objects are derived:
 
-``DL`` Object - Dictionary of Letters (with 4-digit key) with 4th element of tuple being the (non-0-indexed; 1-indexed) position of letter in verse::
+``DL`` Object - Dictionary of Letters (with 4-digit tuple-key) with 4th element of tuple being the (non-0-indexed; 1-indexed) position of letter in verse::
 
    DL[1, 1, 1, 1] --> 'ב'
    DL[1, 1, 1, 2] --> 'ר'
