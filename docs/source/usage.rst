@@ -138,9 +138,9 @@ Program Concepts: Objects - D (DS), DL, D5, D5K, L (LLL), S (SSS), N (NW), W (DW
 
 The essential objects in TorahBibleCodes are native Python data objects (i.e. strings, lists, tuples, and dictionaries).
 
-For any text chosen (e.g. Genesis, Exodus, Leviticus, Numbers, Deuteronomy, or all five (5) together, or all twenty-one (21) books of the Prophets, or all thirteen (13) books of the Writings, or all thirty-nine (39) books of the entire Hebrew Bible), the text is parsed and a Python dictionary ``D`` Object (and ``DS`` Object) is created that allows one to access each verse by 3-digit Tuple Key (Book, Chapter, Verse). After choosing the text(s) to be searched, a Python dictionary ``D`` (and ``DS``) is created to contain each verse - accessible by 3-digit Tuple Key.
+For any text chosen (e.g. Genesis, Exodus, Leviticus, Numbers, Deuteronomy, or all five (5) together, or all twenty-one (21) books of the Prophets, or all thirteen (13) books of the Writings, or all thirty-nine (39) books of the entire Hebrew Bible), the text is parsed and a Python dictionary objects ``D`` and ``DS`` are created that allow one to access each verse by 3-digit Tuple Key (Book, Chapter, Verse). After choosing the text(s) to be searched, a Python dictionary ``D`` (with no spaces) and ``DS`` (with spaces) are created to contain each verse - accessible by 3-digit Tuple Key.
 
-Each verse (and letter) of the thirty-nine (39) books of the Hebrew Bible is accessible via the Python dictionary ``D`` (or ``DS``) with a unique 3-digit Tuple Key as per following examples:
+Each verse (and letter) of the thirty-nine (39) books of the Hebrew Bible is accessible via the Python dictionary ``D`` and ``DS``) with a unique 3-digit Tuple Key as per following examples:
 
 ``D`` Object - Dictionary of Verses (with No Spaces), accessible as data with a 3-digit Tuple Key
 
@@ -179,6 +179,30 @@ Each verse (and letter) of the thirty-nine (39) books of the Hebrew Bible is acc
    DS[1,1,1] --> GENESIS 1:1 - 1st Book, 1st Chapter, 1st Verse
    DS[1,1,2] --> GENESIS 1:2 - 1st Book, 1st Chapter, 2nd Verse
    DS[1,1,3] --> GENESIS 1:3 - 1st Book, 1st Chapter, 3rd Verse
+   
+   DS[1,1,1] --> GENESIS 1:1
+   DS[1,1,7] --> GENESIS 1:7
+   DS[1,50,26] --> GENESIS 50:26
+   DS[2,1,1] --> EXODUS 1:1
+   DS[2,40,38] --> EXODUS 40:38
+   DS[3,1,1] --> LEVITICUS 1:1
+   DS[3,27,34] --> LEVITICUS 27:34
+   DS[4,1,1] --> NUMBERS 1:1
+   DS[4,36,13] --> NUMBERS 36:13
+   DS[5,1,1] --> DEUTERONOMY 1:1
+   DS[5,34,12] --> DEUTERONOMY 34:12
+   
+   DS[1,1,1] == 'בראשית ברא אלהים את השמים ואת הארץ'
+   DS[1,1,7] == 'ויעש אלהים את הרקיע ויבדל בין המים אשר מתחת לרקיע ובין המים אשר מעל לרקיע ויהי כן'
+   DS[1,50,26] == 'וימת יוסף בן מאה ועשר שנים ויחנטו אתו ויישם בארון במצרים'
+   DS[2,1,1] == 'ואלהשמותבניישראלהבאיםמצרימהאתיעקבאישוביתובאו'
+   DS[2,40,38] == 'כיענןיהוהעלהמשכןיומםואשתהיהלילהבולעיניכלביתישראלבכלמסעיהם'
+   DS[3,1,1] == 'ויקראאלמשהוידבריהוהאליומאהלמועדלאמר'
+   DS[3,27,34] == 'אלההמצותאשרצוהיהוהאתמשהאלבניישראלבהרסיני'
+   DS[4,1,1] == 'וידבריהוהאלמשהבמדברסיניבאהלמועדבאחדלחדשהשניבשנההשניתלצאתםמארץמצריםלאמר'
+   DS[4,36,13] == 'אלההמצותוהמשפטיםאשרצוהיהוהבידמשהאלבניישראלבערבתמואבעלירדןירחו'
+   DS[5,1,1] == 'אלההדבריםאשרדברמשהאלכלישראלבעברהירדןבמדברבערבהמולסוףביןפארןוביןתפלולבןוחצרתודיזהב'
+   DS[5,34,12] == 'ולכלהידהחזקהולכלהמוראהגדולאשרעשהמשהלעיניכלישראל'
    
 ``D`` Object - Dictionary of Verses/Letters, accessible as data with a 3-digit Tuple Key + sub-element (0-indexed) in sequence of letters within each verse.::
 
