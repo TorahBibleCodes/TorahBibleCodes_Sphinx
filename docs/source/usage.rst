@@ -6,11 +6,24 @@ Usage
 Installation
 ------------
 
-To use TorahBibleCodes, first install Python on your local computer, and then download the TorahBibleCodes GitHub Repo ZIP file or clone the GitHub repo to your local computer.
+To use TorahBibleCodes, first dowloand and install Python on your local computer:
+
+DOWNLOAD and INSTALL PYTHON: https://www.python.org/downloads/
+
+After installing Python, then 'pip install' ``ipython``::
+
+Install ``ipython``
+
+.. code-block:: console
+
+   pip install ipython
+   
+and then download the TorahBibleCodes GitHub Repo ZIP file or clone the GitHub repo to your local computer.
 
 .. code-block:: console
 
    git clone https://github.com/TorahBibleCodes/TorahBibleCodes.git
+   
 
 WARNING
 ----------------
@@ -104,7 +117,7 @@ Program Concepts: Objects - D (DS), DL, D5, D5K, L (LLL), S (SSS), N (NW), W (DW
 
 The essential objects in TorahBibleCodes are native Python data objects (i.e. strings, lists, tuples, and dictionaries).
 
-For any text chosen (e.g. Genesis, Exodus, Leviticus, Numbers, Deuteronomy, or all five (5) together, or all twenty-one (21) books of the Prophets, or all thirteen (13) books of the Writings, or all thirty-nine (39) books of the entire Hebrew Bible), the text is parsed and a Python dictionary D (and DS) is created that allows one to access each verse by 3-digit Tuple Key (Book, Chapter, Verse). After choosing the text(s) to be searched, a Python dictionary D (and DS) is created to contain each verse - accessible by 3-digit Tuple Key.
+For any text chosen (e.g. Genesis, Exodus, Leviticus, Numbers, Deuteronomy, or all five (5) together, or all twenty-one (21) books of the Prophets, or all thirteen (13) books of the Writings, or all thirty-nine (39) books of the entire Hebrew Bible), the text is parsed and a Python dictionary ``D`` Object (and ``DS`` Object) is created that allows one to access each verse by 3-digit Tuple Key (Book, Chapter, Verse). After choosing the text(s) to be searched, a Python dictionary D (and DS) is created to contain each verse - accessible by 3-digit Tuple Key.
 
 Each verse (and letter) of the thirty-nine (39) books of the Hebrew Bible is accessible via the Python dictionary ``D`` (or ``DS``) with a unique 3-digit Tuple Key as per following examples:
 
