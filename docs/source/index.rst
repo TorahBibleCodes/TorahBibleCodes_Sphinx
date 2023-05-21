@@ -11,6 +11,8 @@ HOMEPAGE URL: https://TorahBibleCodes.com
 
 GITHUB: https://github.com/torahbiblecodes
 
+READTHEDOCS (this page): https://torahbiblecodes-sphinx.readthedocs.io/en/latest/index.html
+
 STACKOVERFLOW: https://stackoverflow.com/users/8911652/torahbiblecodes
 
 TWITTER: @TorahBibleCodes https://twitter.com/TorahBibleCodes
