@@ -10,7 +10,7 @@ To use TorahBibleCodes:
 
 1.) DOWNLOAD and INSTALL PYTHON on your local computer: https://www.python.org/downloads/
 
-2.) In the folder where Python has been installed, open a Command Line Interface (CLI), PowerShell (via SHIFT-RIGHT-MOUSE-CLICK IN FOLDER), etc. and then INSTALL ``ipython`` via ``pip install`` at the command prompt.
+2.) In the folder where Python has been installed, Open a Command Line Interface (CLI) such as Windows PowerShell or the equivalent on other Apple and Linux devices, and then INSTALL ``ipython`` via ``pip install`` at the command prompt.
 
 .. code-block:: console
 
@@ -212,6 +212,7 @@ Each verse (and letter) of the thirty-nine (39) books of the Hebrew Bible is acc
    D[1,1,1][-1] --> Last element (letter) in string/verse sequence --> 'ץ'
 
 Data Objects (and derivative Data Objects) with Info for Each Letter in Text:
+
 
 Custom Letter Objects (LO)
 
