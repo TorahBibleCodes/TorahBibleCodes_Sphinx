@@ -126,20 +126,19 @@ selected text that is searched; For each instance of a letter found at index num
 likely be multiple instances of skip distances d possible to the next letter in that ELS.
 
 n = index number starting position for each instance for each first (or last) letter in the ELS; For
-example, if you are searching for a word that begins (or ends) with the letter Mem (מ (in the text, index
-number n is the index position number for each instance found of the letter Mem (מ(, and for each
-instance of these letters Mem (מ (found, there is the potential to find multiple ELSs beginning (or
+example, if you are searching for a word that begins (or ends) with the letter Mem (מ) in the text, index
+number n is the index position number for each instance found of the letter Mem (מ), and for each
+instance of these letters Mem (מ) found, there is the potential to find multiple ELSs beginning (or
 ending) on that letter.
 
 
-For example:
 
 Program Concepts: Objects - D (DS), DL, D5, D5K, L (LLL), S (SSS), N (NW), W (DW), ListOfWords, NW4ELS, W4ELS (DW4ELS);
 ----------------
 
 The essential objects in TorahBibleCodes are native Python data objects (i.e. strings, lists, tuples, and dictionaries).
 
-For any text chosen (e.g. Genesis, Exodus, Leviticus, Numbers, Deuteronomy, or all five (5) together, or all twenty-one (21) books of the Prophets, or all thirteen (13) books of the Writings, or all thirty-nine (39) books of the entire Hebrew Bible), the text is parsed and a Python dictionary ``D`` Object (and ``DS`` Object) is created that allows one to access each verse by 3-digit Tuple Key (Book, Chapter, Verse). After choosing the text(s) to be searched, a Python dictionary D (and DS) is created to contain each verse - accessible by 3-digit Tuple Key.
+For any text chosen (e.g. Genesis, Exodus, Leviticus, Numbers, Deuteronomy, or all five (5) together, or all twenty-one (21) books of the Prophets, or all thirteen (13) books of the Writings, or all thirty-nine (39) books of the entire Hebrew Bible), the text is parsed and a Python dictionary ``D`` Object (and ``DS`` Object) is created that allows one to access each verse by 3-digit Tuple Key (Book, Chapter, Verse). After choosing the text(s) to be searched, a Python dictionary ``D`` (and ``DS``) is created to contain each verse - accessible by 3-digit Tuple Key.
 
 Each verse (and letter) of the thirty-nine (39) books of the Hebrew Bible is accessible via the Python dictionary ``D`` (or ``DS``) with a unique 3-digit Tuple Key as per following examples:
 
