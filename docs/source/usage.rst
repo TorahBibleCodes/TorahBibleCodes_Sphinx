@@ -137,7 +137,7 @@ ending) on that letter.
 
 
 
-Program Concepts: Objects - D (DS), DL, D5, D5K, L (LLL), S (SSS), N (NW), W (DW), ListOfWords, NW4ELS, W4ELS (DW4ELS);
+Program Concepts: Native Python Data Objects
 ----------------
 
 The essential objects in TorahBibleCodes are native Python data objects (i.e. strings, lists, tuples, and dictionaries).
