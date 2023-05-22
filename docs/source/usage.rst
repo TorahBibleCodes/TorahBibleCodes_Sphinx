@@ -214,13 +214,18 @@ Each verse (and letter) of the thirty-nine (39) books of the Hebrew Bible is acc
    D[1,1,1][1] --> 2nd element (letter) in string/verse sequence --> 'ר'
    D[1,1,1][2] --> 3rd element (letter) in string/verse sequence --> 'א'
    D[1,1,1][-1] --> Last element (letter) in string/verse sequence --> 'ץ'
+   
+   D[5,34,12][0] --> 1st element (letter) in string/verse sequence --> 'ו'
+   D[5,34,12][1] --> 2nd element (letter) in string/verse sequence --> 'ל'
+   D[5,34,12][2] --> 3rd element (letter) in string/verse sequence --> 'כ'
+   D[5,34,12][-1] --> Last element (letter) in string/verse sequence --> 'ל'
 
 Data Objects (and derivative Data Objects)
 ----------------
 
 From the ``D`` and ``DS`` Objects, all other Python Data Objects are derived:
 
-``DL`` Object - Dictionary of Letters (with 4-digit tuple-key) with 4th element of tuple being the (non-0-indexed; 1-indexed) position of letter in verse::
+``DL`` Object - Dictionary of Letters (with 4-integer tuple-key) with 4th element of tuple being the (non-0-indexed; 1-indexed) position of letter in verse::
 
    DL[1, 1, 1, 1] --> 'ב'
    DL[1, 1, 1, 2] --> 'ר'
@@ -235,7 +240,7 @@ From the ``D`` and ``DS`` Objects, all other Python Data Objects are derived:
    DL[5,34,12,46] --> 'א'
    DL[5,34,12,47] --> 'ל'
 
-``D5`` Object - Dictionary of Letters (with 5-digit key) with 5th element of tuple being the position of letter in total sequence of text...(i.e. either all five (5) texts of the Torah together (304850 letters), or one (1) text only, or all twenty-one (21) texts of the Prophets, or all thirteen (13) texts of the Writings, or all thirty-nine (39) texts of the entire Hebrew Bible together).
+``D5`` Object - Dictionary of Letters (with 5-integer tuple key) with 5th element of tuple being the position of letter in total sequence of text... i.e. either all five (5) texts of the Torah together (304850 letters), or one (1) text only, or all twenty-one (21) texts of the Prophets (553785 letters), or all thirteen (13) texts of the Writings (338407 letters), or all thirty-nine (39) texts of the entire Hebrew Bible together (1197042 letters).
 
 It is this 5th number of this 5-integer tuple key of the ``D5`` that serves as the primary key and unique identifier for every letter object in the selected text(s)::
 
@@ -256,11 +261,13 @@ It is this 5th number of this 5-integer tuple key of the ``D5`` that serves as t
 
    L[0:6] --> ['ב', 'ר', 'א', 'ש', 'י', 'ת']
    L[-5:] --> ['י', 'ש', 'ר', 'א', 'ל']
+   L[304845:304850] --> ['י', 'ש', 'ר', 'א', 'ל']
 
 ``S`` Object - String of Letters::
 
    S[0:6] --> 'בראשית'
    S[-5:] --> 'ישראל'
+   S[304845:304850] --> 'ישראל'
 
 ``N`` Object - List of Gematria Number Values::
 
