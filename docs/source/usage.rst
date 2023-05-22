@@ -235,7 +235,9 @@ From the ``D`` and ``DS`` Objects, all other Python Data Objects are derived:
    DL[5,34,12,46] --> 'א'
    DL[5,34,12,47] --> 'ל'
 
-``D5`` Object - Dictionary of Letters (with 5-digit key) with 5th element of tuple being the position of letter in total sequence of text...(i.e. either all five (5) texts of the Torah together (304850 letters), or one (1) text only, or all twenty-one (21) texts of the Prophets, or all thirteen (13) texts of the Writings, or all thirty-nine (39) texts of the entire Hebrew Bible together).::
+``D5`` Object - Dictionary of Letters (with 5-digit key) with 5th element of tuple being the position of letter in total sequence of text...(i.e. either all five (5) texts of the Torah together (304850 letters), or one (1) text only, or all twenty-one (21) texts of the Prophets, or all thirteen (13) texts of the Writings, or all thirty-nine (39) texts of the entire Hebrew Bible together).
+
+It is this 5th number of this 5-integer tuple key of the ``D5`` that serves as the primary key and unique identifier for every letter object in the selected text(s)::
 
    D5[1, 1, 1, 1, 1] --> 'ב'
    D5[1, 1, 1, 2, 2] --> 'ר'
