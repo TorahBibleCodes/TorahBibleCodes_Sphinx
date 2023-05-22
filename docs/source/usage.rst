@@ -265,26 +265,29 @@ From the ``D`` and ``DS`` Objects, all other Python Data Objects are derived:
 
 ``DW`` Object - Dictionary of Words::
 
+   ## NOTE: BECAUSE OF BUGS IN PRESENTING UNICODE STRINGS ON READ THE DOCS, QUOTES HAVE BEEN REMOVED FROM THE HEBREW TEXT STRINGS BELOW TO PRESERVE PRESENTATION  OF THESE TUPLES OF DATA;
+   ## ACTUAL TEXT STRINGS WILL INCLUDE ENCLOSING QUOTATION MARKS.
+   
    In [1]: DW[1]
-   Out[1]: ('בראשית', [1, 2, 3, 4, 5, 6], (1, [2, 200, 1, 300, 10, 400], 913))
+   Out[1]: (בראשית , [1, 2, 3, 4, 5, 6], (1, [2, 200, 1, 300, 10, 400], 913))
 
    In [2]: DW[2]
-   Out[2]: ('ברא', [7, 8, 9], (2, [2, 200, 1], 203))
+   Out[2]: (ברא , [7, 8, 9], (2, [2, 200, 1], 203))
 
    In [3]: DW[3]
-   Out[3]: ('אלהים', [10, 11, 12, 13, 14], (3, [1, 30, 5, 10, 40], 86))
+   Out[3]: (אלהים, [10, 11, 12, 13, 14], (3, [1, 30, 5, 10, 40], 86))
 
    In [4]: DW[4]
-   Out[4]: ('את', [15, 16], (4, [1, 400], 401))
+   Out[4]: (את , [15, 16], (4, [1, 400], 401))
 
    In [5]: DW[5]
-   Out[5]: ('השמים', [17, 18, 19, 20, 21], (5, [5, 300, 40, 10, 40], 395))
+   Out[5]: (השמים , [17, 18, 19, 20, 21], (5, [5, 300, 40, 10, 40], 395))
 
    In [6]: DW[6]
-   Out[6]: ('ואת', [22, 23, 24], (6, [6, 1, 400], 407))
+   Out[6]: (ואת , [22, 23, 24], (6, [6, 1, 400], 407))
 
    In [7]: DW[7]
-   Out[7]: ('הארץ', [25, 26, 27, 28], (7, [5, 1, 200, 90], 296))
+   Out[7]: (הארץ , [25, 26, 27, 28], (7, [5, 1, 200, 90], 296))
 
 
 Custom Letter Objects (LO)
