@@ -110,17 +110,17 @@ For example::
 Equidistant Letter Sequences (ELSs)
 ----------------
 
-Witztum, Rips, and Rosenberg (WRR) define an Equidistant Letter Sequence (ELS) as a sequence of letters in the text whose positions - not counting spaces - form an arithmetic progression. That is to say the letters are found at the positions
+Witztum, Rips, and Rosenberg (WRR) define an Equidistant Letter Sequence (ELS) as a sequence of letters in the text whose positions - not counting spaces - form an arithmetic progression. That is to say the letters are found at the positions::
 
-n, (n + d), (n + 2d), (n + 3d) ..., (n + (k - 1)d)
+   n, (n + d), (n + 2d), (n + 3d) ..., (n + (k - 1)d)
 
 WRR define *n* as the start, *d* as the skip between letters in the search-term, and *k* as the length of the ELS. These three parameters uniquely identify the ELS which is denoted (*n*, *d*, *k*).
 
-For example:
+For example::
 
-ELS1 = “משיח” == “Mashiach” == “Messiah”
+   ELS1 = “משיח” == “Mashiach” == “Messiah”
 
-ELS2 = “המשיח” == “HaMashiach” == “The Messiah”
+   ELS2 = “המשיח” == “HaMashiach” == “The Messiah”
 
 *k* = length of an ELS Search-Term, ELS, i.e. the number of letters in the word; here: The length
 *k* of ELS1 is 4; The length *k* of ELS2 is 5.
