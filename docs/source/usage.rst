@@ -262,6 +262,33 @@ From the ``D`` and ``DS`` Objects, all other Python Data Objects are derived:
 
    L[0:6] --> ['ב', 'ר', 'א', 'ש', 'י', 'ת']
    N[0:6] --> [2, 200, 1, 300, 10, 400]
+   
+Each letter's Hebrew Kabbalah Numerical Gematria Value is obtainable by passing a string-sequence to a MODULE.FUNCTION() call (NOTE: Numbers returned in the ``N`` Object are left-to-right; In previous, older versions of Python, Hebrew letters returned in ``L`` Object were R-T-L right-to-left; However, in current our development version of Python 3.9, these same Hebrew letters returned are L-T-R left-to-right, so now the Hebrew letter order is exactly the same as all other orders in the Python Lists: L-T-R).
+
+Because of the possibility of five (5) Hebrew letters to have a second, alternate (final letter) form, all Hebrew Unicode letters are converted to their numerical equivalent so that search for ELSs is via Gematria Integer Number value::
+
+   א = 1
+   ב = 2
+   3 = ג
+   4 = ד
+   5 = ה
+   6 = ו
+   7 = ז
+   8 = ח
+   9 = ט
+   10 = י
+   20 = כ / ך
+   30 = ל
+   40 = מ / ם
+   50 = נ / ן
+   60 = ס
+   70 = ע
+   80 = פ / ף
+   90 = צ / ץ
+   100 = ק
+   200 = ר
+   300 = ש
+   400 = ת
 
 ``DW`` Object - Dictionary of Words::
 
