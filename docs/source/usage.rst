@@ -265,7 +265,7 @@ From the ``D`` and ``DS`` Objects, all other Python Data Objects are derived:
    L[0:6] --> ['ב', 'ר', 'א', 'ש', 'י', 'ת']
    N[0:6] --> [2, 200, 1, 300, 10, 400]
    
-Each letter's Hebrew Kabbalah Numerical Gematria Value is obtainable by passing a string-sequence to a MODULE.FUNCTION() call (NOTE: Numbers returned in the ``N`` Object are left-to-right; In previous, older versions of Python, Hebrew letters returned in ``L`` Object were R-T-L right-to-left; However, in current our development version of Python 3.9, these same Hebrew letters returned are L-T-R left-to-right, so now the Hebrew letter order is exactly the same as all other orders in the Python Lists: L-T-R).
+Each letter's Hebrew Kabbalah Numerical Gematria Value is obtainable by passing a string-sequence to a MODULE.FUNCTION() call (NOTE: Numbers returned in the ``N`` Object are left-to-right (L-T-R); In previous, older versions of Python, Hebrew letters returned in ``L`` Object were right-to-left (R-T-L); However, in development version of Python 3.9+, these same Hebrew letters returned are left-to-right (L-T-R), so now the Hebrew letter order is exactly the same as all other orders in the Python Lists: L-T-R).
 
 Because of the possibility of five (5) Hebrew letters to have a second, alternate (final letter) form, all Hebrew Unicode letters are converted to their numerical equivalent so that search for ELSs is via Gematria Integer Number value::
 
