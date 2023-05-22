@@ -151,6 +151,7 @@ Each verse (and letter) of the thirty-nine (39) books of the Hebrew Bible is acc
 ``D`` Object - Dictionary of Verses (with No Spaces), accessible as data with a 3-digit Tuple Key::
 
    ## 3-DIGIT-TUPLE-BASED DICTIONARY KEY POSITION OF (BOOK#, CHAPTER#, VERSE#) - NO SPACES BETWEEN WORDS/LETTERS
+   
    D[1,1,1] --> GENESIS 1:1 - 1st Book, 1st Chapter, 1st Verse
    D[1,1,2] --> GENESIS 1:2 - 1st Book, 1st Chapter, 2nd Verse
    D[1,1,3] --> GENESIS 1:3 - 1st Book, 1st Chapter, 3rd Verse
@@ -182,6 +183,7 @@ Each verse (and letter) of the thirty-nine (39) books of the Hebrew Bible is acc
 ``DS`` Object - Dictionary of Verses (with Spaces), accessible as data with a 3-digit Tuple Key::
 
    ## 3-DIGIT-TUPLE-BASED DICTIONARY KEY POSITION OF (BOOK#, CHAPTER#, VERSE#) - WITH SPACES BETWEEN WORDS/LETTERS
+   
    DS[1,1,1] --> GENESIS 1:1 - 1st Book, 1st Chapter, 1st Verse
    DS[1,1,2] --> GENESIS 1:2 - 1st Book, 1st Chapter, 2nd Verse
    DS[1,1,3] --> GENESIS 1:3 - 1st Book, 1st Chapter, 3rd Verse
@@ -213,6 +215,7 @@ Each verse (and letter) of the thirty-nine (39) books of the Hebrew Bible is acc
 ``D`` Object - Dictionary of Verses/Letters, accessible as data with a 3-digit Tuple Key + sub-element (0-indexed) in sequence of letters within each verse::
 
    ## 3-DIGIT-TUPLE-BASED DICTIONARY KEY POSITION OF (BOOK#, CHAPTER#, VERSE#) - NO SPACES BETWEEN WORDS/LETTERS
+   
    D[1,1,1][0] --> 1st element (letter) in string/verse sequence --> 'ב'
    D[1,1,1][1] --> 2nd element (letter) in string/verse sequence --> 'ר'
    D[1,1,1][2] --> 3rd element (letter) in string/verse sequence --> 'א'
@@ -231,6 +234,7 @@ From the ``D`` and ``DS`` Objects, all other Python Data Objects are derived:
 ``DL`` Object - Dictionary of Letters (with 4-integer tuple-key) with 4th element of tuple being the (non-0-indexed; 1-indexed) position of letter in verse::
 
    ## 4-DIGIT-TUPLE-BASED DICTIONARY KEY POSITION OF (BOOK#, CHAPTER#, VERSE#, LETTER#INVERSE) - NO SPACES BETWEEN WORDS/LETTERS
+   
    DL[1, 1, 1, 1] --> 'ב'
    DL[1, 1, 1, 2] --> 'ר'
    DL[1, 1, 1, 3] --> 'א'
@@ -249,6 +253,7 @@ From the ``D`` and ``DS`` Objects, all other Python Data Objects are derived:
 It is this 5th number of this 5-integer tuple key of the ``D5`` that serves as the primary key and unique identifier for every letter object in the selected text(s); Assuming 304850 letters for entire Torah selected::
 
    ## 5-DIGIT-TUPLE-BASED DICTIONARY KEY POSITION OF (BOOK#, CHAPTER#, VERSE#, LETTER#INVERSE, LETTER#INTEXT) - NO SPACES BETWEEN WORDS/LETTERS
+   
    D5[1, 1, 1, 1, 1] --> 'ב'
    D5[1, 1, 1, 2, 2] --> 'ר'
    D5[1, 1, 1, 3, 3] --> 'א'
@@ -265,6 +270,7 @@ It is this 5th number of this 5-integer tuple key of the ``D5`` that serves as t
 ``D5K`` Object - Dictionary of 5-integer tuple keys::
 
    ## 1-BASED DICTIONARY KEY-POSITIONS: RETURNS ## 5-DIGIT-TUPLE-BASED DICTIONARY VALUE OF (BOOK#, CHAPTER#, VERSE#, LETTER#INVERSE, LETTER#INTEXT)
+   
    D5K[1] --> (1, 1, 1, 1, 1)
    D5K[2] --> (1, 1, 1, 2, 2)
    D5K[3] --> (1, 1, 1, 3, 3)
@@ -281,6 +287,7 @@ It is this 5th number of this 5-integer tuple key of the ``D5`` that serves as t
 ``L`` Object - List of Letters::
 
    ## 0-BASED INDEX POSITIONS
+   
    L[0:6] --> ['ב', 'ר', 'א', 'ש', 'י', 'ת']
    L[-5:] --> ['י', 'ש', 'ר', 'א', 'ל']
    L[304845:304850] --> ['י', 'ש', 'ר', 'א', 'ל']
@@ -288,6 +295,7 @@ It is this 5th number of this 5-integer tuple key of the ``D5`` that serves as t
 ``S`` Object - String of Letters::
 
    ## 0-BASED INDEX POSITIONS
+   
    S[0:6] --> 'בראשית'
    S[-5:] --> 'ישראל'
    S[304845:304850] --> 'ישראל'
@@ -295,6 +303,7 @@ It is this 5th number of this 5-integer tuple key of the ``D5`` that serves as t
 ``N`` Object - List of Gematria Number Values::
 
    ## 0-BASED INDEX POSITIONS
+   
    L[0:6] --> ['ב', 'ר', 'א', 'ש', 'י', 'ת']
    N[0:6] --> [2, 200, 1, 300, 10, 400]
    L[-5:] --> ['י', 'ש', 'ר', 'א', 'ל']
