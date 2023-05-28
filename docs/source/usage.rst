@@ -245,6 +245,7 @@ From the ``D`` and ``DS`` Objects, all other Python Data Objects are derived:
 
    ## 4-DIGIT-TUPLE-BASED DICTIONARY KEY POSITION OF (BOOK#, CHAPTER#, VERSE#, LETTER#INVERSE) - NO SPACES BETWEEN WORDS/LETTERS
    
+   ## FIRST SIX LETTERS OF TORAH: GENESIS
    DL[1, 1, 1, 1] --> 'ב'
    DL[1, 1, 1, 2] --> 'ר'
    DL[1, 1, 1, 3] --> 'א'
@@ -252,13 +253,14 @@ From the ``D`` and ``DS`` Objects, all other Python Data Objects are derived:
    DL[1, 1, 1, 5] --> 'י'
    DL[1, 1, 1, 6] --> 'ת'
 
+   ## LAST FIVE LETTERS OF TORAH: DEUTERONOMY
    DL[5,34,12,43] --> 'י'
    DL[5,34,12,44] --> 'ש'
    DL[5,34,12,45] --> 'ר'
    DL[5,34,12,46] --> 'א'
    DL[5,34,12,47] --> 'ל'
 
-``D5`` Object - Dictionary of Letters (with 5-integer tuple key) with 5th element of tuple being the position of letter in total sequence of text.
+``D5`` Object - Dictionary of Letters (with 5-integer tuple key) with 5th element of tuple being the *n* position (cf. WRR Algorithm above) of letter in total sequence of text.
 
 For example:
 
@@ -278,6 +280,7 @@ Assuming 304850 letters for entire Torah selected::
 
    ## 5-DIGIT-TUPLE-BASED DICTIONARY KEY POSITION OF (BOOK#, CHAPTER#, VERSE#, LETTER#INVERSE, LETTER#INTEXT) - NO SPACES BETWEEN WORDS/LETTERS
    
+   ## FIRST SIX LETTERS OF TORAH: GENESIS
    D5[1, 1, 1, 1, 1] --> 'ב'
    D5[1, 1, 1, 2, 2] --> 'ר'
    D5[1, 1, 1, 3, 3] --> 'א'
@@ -285,6 +288,7 @@ Assuming 304850 letters for entire Torah selected::
    D5[1, 1, 1, 5, 5] --> 'י'
    D5[1, 1, 1, 6, 6] --> 'ת'
 
+   ## LAST FIVE LETTERS OF TORAH: DEUTERONOMY
    D5[5, 34, 12, 43, 304846] --> 'י'
    D5[5, 34, 12, 44, 304847] --> 'ש'
    D5[5, 34, 12, 45, 304848] --> 'ר'
@@ -295,6 +299,7 @@ Assuming 304850 letters for entire Torah selected::
 
    ## 1-BASED DICTIONARY KEY-POSITIONS: RETURNS ## 5-DIGIT-TUPLE-BASED DICTIONARY VALUE OF (BOOK#, CHAPTER#, VERSE#, LETTER#INVERSE, LETTER#INTEXT)
    
+   ## FIRST SIX LETTERS OF TORAH: GENESIS
    D5K[1] --> (1, 1, 1, 1, 1)
    D5K[2] --> (1, 1, 1, 2, 2)
    D5K[3] --> (1, 1, 1, 3, 3)
@@ -302,6 +307,7 @@ Assuming 304850 letters for entire Torah selected::
    D5K[5] --> (1, 1, 1, 5, 5)
    D5K[6] --> (1, 1, 1, 6, 6)
    
+   ## LAST FIVE LETTERS OF TORAH: DEUTERONOMY
    D5K[304846] --> (5, 34, 12, 43, 304846)
    D5K[304847] --> (5, 34, 12, 44, 304847)
    D5K[304848] --> (5, 34, 12, 45, 304848)
