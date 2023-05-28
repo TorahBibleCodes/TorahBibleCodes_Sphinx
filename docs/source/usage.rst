@@ -128,12 +128,6 @@ For example::
 
 2.) The length *k* of ELS2 is 5.
 
-
-
-*d* = equidistant skip distance(s) between each letter in the ELS successfully found within the
-selected text that is searched (i.e. for each *n*); For each instance of a letter found at index number position *n*, there may
-potentially be multiple instances of skip distances *d* possible to the next letter(s) in that ELS.
-
 *n* = index number starting position for each instance for each first (or last) letter in the ELS;
 
 For example, if you are searching for a word that begins (or ends) with the letter Mem (מ/ם) in the text (e.g. משיח), index
@@ -141,7 +135,11 @@ number *n* is the index position number(s) for each instance found (i.e. for eac
 instance of these letters Mem (מ/ם) found, there is the potential to find multiple ELSs beginning (or
 ending) on that letter.
 
-Because the letter Mem (מ) is one of the five Hebrew letters with an alternate form if coming as the final letter (ם) of a word, the central algorithm efficiently handles this eventuality of ELS Searches: instead of search for either ("regular letter form or final letter form") of the two possible letter formats, it is more useful for extrapolated permutations of useful functionalities of this program to convert all Hebrew letters to their equivalent Hebrew Gematria Numerical values and then search for these integer numbers. Later, when presenting the results to the user in visual format, we simply reference the Custom Class (Letter Object)'s ``.Letter`` property.  
+Because the letter Mem (מ) is one of the five Hebrew letters with an alternate form if coming as the final letter (ם) of a word, the central algorithm efficiently handles this eventuality of ELS Searches: instead of search for either ("regular letter form or final letter form") of the two possible letter formats, it is more useful for extrapolated permutations of useful functionalities of this program to convert all Hebrew letters to their equivalent Hebrew Gematria Numerical values and then search for these integer numbers. Later, when presenting the results to the user in visual format, we simply reference the Custom Class (Letter Object)'s ``.Letter`` property. 
+
+*d* = equidistant skip distance(s) between each letter in the ELS successfully found within the
+selected text that is searched (i.e. for each *n*); For each instance of a letter found at index number position *n*, there may
+potentially be multiple instances of skip distances *d* possible to the next letter(s) in that ELS.
 
 
 
@@ -264,17 +262,19 @@ From the ``D`` and ``DS`` Objects, all other Python Data Objects are derived:
 
 For example:
 
-1.) one (1) text only (# of letters varies)
+1.) One (1) text only (# of letters varies).
 
-2.) either all five (5) texts of the Torah (304850 letters) together
+2.) All five (5) texts of the Torah (304850 letters) together.
 
-3.) all twenty-one (21) texts of the Prophets (553785 letters)
+3.) All twenty-one (21) texts of the Prophets (553785 letters) together.
 
-4.) all thirteen (13) texts of the Writings (338407 letters)
+4.) All thirteen (13) texts of the Writings (338407 letters) together.
 
-5.) all thirty-nine (39) texts of the entire Hebrew Bible (1197042  letters) together
+5.) All thirty-nine (39) texts of the entire Hebrew Bible (1197042 letters) together.
 
-It is this 5th number of this 5-integer tuple key of the ``D5`` that serves as the primary key and unique identifier for every letter object in the selected text(s); Assuming 304850 letters for entire Torah selected::
+It is this 5th number of this 5-integer tuple key of the ``D5`` that serves as the primary key and unique identifier for every letter object in the selected text(s).
+
+Assuming 304850 letters for entire Torah selected::
 
    ## 5-DIGIT-TUPLE-BASED DICTIONARY KEY POSITION OF (BOOK#, CHAPTER#, VERSE#, LETTER#INVERSE, LETTER#INTEXT) - NO SPACES BETWEEN WORDS/LETTERS
    
@@ -411,9 +411,24 @@ Because of the possibility of five (5) Hebrew letters to have a second, alternat
    Out[7]: (הארץ , [25, 26, 27, 28], (7, [5, 1, 200, 90], 296))
 
 
+Custom Class: Letter Objects (LO)
+----------------
+
+``DLO`` Object - Dictionary of Letter Objects::
+
 Custom Letter Objects (LO)
 
+
+Custom Class: Equidistant Letter Sequence (ELS) Objects (ELSO)
+----------------
+
+``DELSO`` Object - Dictionary of Equidistant Letter Sequence (ELS) Objects::
+
 Custom Equidistant Letter Sequence Objects (ELSO)
+
+
+Custom Class: Global Search Object (GSO)
+----------------
 
 Custom Global Search Object (GSO)
 
