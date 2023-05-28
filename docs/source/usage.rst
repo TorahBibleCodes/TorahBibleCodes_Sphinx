@@ -10,7 +10,7 @@ To use TorahBibleCodes:
 
 1.) DOWNLOAD and INSTALL PYTHON on your local computer: https://www.python.org/downloads/
 
-2.) In the folder where Python has been installed, Open a Command Line Interface (CLI) such as Windows PowerShell or the equivalent on other Apple and Linux devices, and then INSTALL ``ipython`` via ``pip install`` at the command prompt.
+2.) In the folder where Python has been installed, Open a Command Line Interface (CLI) such as Windows PowerShell or the equivalent on other Apple and Linux devices, and then INSTALL ``ipython`` interactive python (IPython) development environment via ``pip install`` at the command prompt.
 
 .. code-block:: console
 
@@ -36,7 +36,7 @@ There are criminal squatters who are infringing on our TorahBibleCodes internati
 Run the App
 ----------------
 
-After installing Python as well as cloning the TorahBibleCodes GitHub Repo to your local computer:
+After installing Python, ``ipython``, as well as cloning the TorahBibleCodes GitHub Repo to your local computer:
 
 1.) Navigate to the local folder to where you have cloned TorahBibleCodes.
 
