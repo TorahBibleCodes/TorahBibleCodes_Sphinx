@@ -274,13 +274,18 @@ For example:
 
 5.) All thirty-nine (39) texts of the entire Hebrew Bible (1197042 letters) together.
 
-It is this 5th number of this 5-integer tuple key of the ``D5`` that serves as the primary key and unique identifier for every letter object in the selected text(s).
+The 5-Integer Tuple-Key / Tuple-Value
+----------------
+
+It is this 5th number of this 5-integer tuple-key of the ``D5`` Object (as well as the 5-integer tuple-value of the ``D5K`` Object that serves as the primary key - and thus the unique identifier - for every letter object in the selected text(s).
 
 It is this 5th integer by which the program will uniquely identify each letter position *n* in the selected text(s).
 
 Humans will find it easier to refer to the same letter position *n* by its complete 5-integer tuple-key that allows quick reference to the Book#, Chapter#, Verse#, Letter#InVerse, and Letter#InText.
 
 For any letter in the selected text(s), it is this 5th integer by which one can return (via the ``D5K`` Object) the entire 5-integer tuple-key letter position *n*; Conquently, one can use this 5-integer tuple-key to return that specific Hebrew letter (via the ``D5`` Object).
+
+Thus if one knows either the letter position *n* via the entire 5-integer tuple-number key/value or simply via the 5th number only, it is possible to retrieve that unique letter object at that position.
 
 Assuming 304850 letters for entire Torah selected::
 
