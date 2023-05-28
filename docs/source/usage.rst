@@ -280,7 +280,7 @@ It is this 5th integer by which the program will uniquely identify each letter p
 
 Humans will find it easier to refer to the same letter position *n* by its complete 5-integer tuple-key that allows quick reference to the Book#, Chapter#, Verse#, Letter#InVerse, and Letter#InText.
 
-It is this 5th integer by which one can return the entire 5-digit tuple-key letter position *n* for any letter in the selected text(s).
+For any letter in the selected text(s), it is this 5th integer by which one can return (via the ``D5K`` Object) the entire 5-integer tuple-key letter position *n*; Conquently, one can use this 5-integer tuple-key to return that specific Hebrew letter (via the ``D5`` Object).
 
 Assuming 304850 letters for entire Torah selected::
 
