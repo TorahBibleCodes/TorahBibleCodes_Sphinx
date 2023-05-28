@@ -262,7 +262,13 @@ From the ``D`` and ``DS`` Objects, all other Python Data Objects are derived:
 
 ``D5`` Object - Dictionary of Letters (with 5-integer tuple key) with 5th element of tuple being the position of letter in total sequence of text.
 
-For example: either all five (5) texts of the Torah (304850 letters) together, or one (1) text only (# of letters varies), or all twenty-one (21) texts of the Prophets (553785 letters), or all thirteen (13) texts of the Writings (338407 letters), or all thirty-nine (39) texts of the entire Hebrew Bible (1197042  letters) together.
+For example:
+
+1.) one (1) text only (# of letters varies);
+2.) either all five (5) texts of the Torah (304850 letters) together; 
+3.) all twenty-one (21) texts of the Prophets (553785 letters);
+4.) all thirteen (13) texts of the Writings (338407 letters); 
+5.) all thirty-nine (39) texts of the entire Hebrew Bible (1197042  letters) together.
 
 It is this 5th number of this 5-integer tuple key of the ``D5`` that serves as the primary key and unique identifier for every letter object in the selected text(s); Assuming 304850 letters for entire Torah selected::
 
