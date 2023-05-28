@@ -351,27 +351,8 @@ Assuming 304850 letters for entire Torah selected::
    ## LAST FIVE LETTERS OF TORAH: DEUTERONOMY
    S[304845:304850] --> 'ישראל'
 
-``N`` Object - List of Gematria Number Values::
-
-   ## 0-BASED INDEX POSITIONS
-   
-   ## FIRST SIX LETTERS OF TORAH: GENESIS
-   L[0:6] --> ['ב', 'ר', 'א', 'ש', 'י', 'ת']
-   N[0:6] --> [2, 200, 1, 300, 10, 400]
-   
-   ## LAST FIVE LETTERS OF TORAH: DEUTERONOMY
-   L[-5:] --> ['י', 'ש', 'ר', 'א', 'ל']
-   N[-5:] --> [10, 300, 200, 1, 30]
-   
-   ## LAST FIVE LETTERS OF TORAH: DEUTERONOMY
-   L[304845:304850] --> ['י', 'ש', 'ר', 'א', 'ל']
-   N[304845:304850] --> [10, 300, 200, 1, 30]
-   
-Each letter's Hebrew Kabbalah Numerical Gematria Value is obtainable by passing a string-sequence to a :py:func:`mod_9A_GetNumberValues4Letters.fn_GetNumberValues` MODULE.FUNCTION() call.
-
-**NOTE:** 
-
-In previous, older versions of Python, Hebrew letters returned in ``L`` Object were right-to-left (R-T-L); However, in development version of Python 3.9+, these same Hebrew letters returned are left-to-right (L-T-R), so now the Hebrew letter order is consistent with all other orders in sequences Python Lists: (L-T-R). Numbers returned in the ``N`` Object are left-to-right (L-T-R); 
+Hebrew Gematria Numerical Values
+----------------
 
 Because of the possibility of five (5) Hebrew letters to have a second, alternate (final letter) form, all Hebrew Unicode letters are converted to their numerical equivalent so that search for ELSs is via Gematria Integer Number value::
 
@@ -399,6 +380,28 @@ Because of the possibility of five (5) Hebrew letters to have a second, alternat
    200 = ר
    300 = ש
    400 = ת
+
+Each letter's Hebrew Kabbalah Numerical Gematria Value is obtainable by passing a string-sequence to a :py:func:`mod_9A_GetNumberValues4Letters.fn_GetNumberValues` MODULE.FUNCTION() call.
+
+**NOTE:** 
+
+In previous, older versions of Python, Hebrew letters returned in ``L`` Object were right-to-left (R-T-L); However, in development version of Python 3.9+, these same Hebrew letters returned are left-to-right (L-T-R), so now the Hebrew letter order is consistent with all other orders in sequences Python Lists: (L-T-R). Numbers returned in the ``N`` Object are left-to-right (L-T-R); 
+
+``N`` Object - List of Gematria Number Values::
+
+   ## 0-BASED INDEX POSITIONS
+   
+   ## FIRST SIX LETTERS OF TORAH: GENESIS
+   L[0:6] --> ['ב', 'ר', 'א', 'ש', 'י', 'ת']
+   N[0:6] --> [2, 200, 1, 300, 10, 400]
+   
+   ## LAST FIVE LETTERS OF TORAH: DEUTERONOMY
+   L[-5:] --> ['י', 'ש', 'ר', 'א', 'ל']
+   N[-5:] --> [10, 300, 200, 1, 30]
+   
+   ## LAST FIVE LETTERS OF TORAH: DEUTERONOMY
+   L[304845:304850] --> ['י', 'ש', 'ר', 'א', 'ל']
+   N[304845:304850] --> [10, 300, 200, 1, 30]
 
 ``DW`` Object - Dictionary of Words::
 
