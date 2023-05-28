@@ -42,11 +42,11 @@ After installing Python as well as cloning the TorahBibleCodes GitHub Repo to yo
 
 2.) Open a Command Line Interface (CLI) such as Windows PowerShell or the equivalent on other Apple and Linux devices.
 
-3.) Activate your ``ipython`` interactive python development environment by typing ``ipython`` at your CLI prompt.
+3.) Activate your ``ipython`` interactive python (IPython) development environment by typing ``ipython`` at your CLI prompt.
 
-After your IPython development environment has been activated in the CLI Window:
+After your ``ipython`` interactive python (IPython) development environment has been activated in the CLI Window:
 
-4.) Type ``%run p.py`` at the IPython command prompt.
+4.) Type ``%run p.py`` at the ``ipython`` (IPython) command prompt.
 
 You will be prompted to select a text from the Hebrew Bible via the :py:func:`fn_GetUserInput` function.
 
@@ -122,18 +122,24 @@ For example::
 
    ELS2 = “המשיח” == “HaMashiach” == “The Messiah”
 
-*k* = length of an ELS Search-Term, ELS, i.e. the number of letters in the word; here: The length
-*k* of ELS1 is 4; The length *k* of ELS2 is 5.
+*k* = length of an ELS Search-Term, ELS, i.e. the number of letters in the word; here:
+
+1.) The length *k* of ELS1 is 4; 
+
+2.) The length *k* of ELS2 is 5.
 
 *d* = equidistant skip distance(s) between each letter in the ELS successfully found within the
 selected text that is searched; For each instance of a letter found at index number position *n*, there may
 potentially be multiple instances of skip distances *d* possible to the next letter(s) in that ELS.
 
-*n* = index number starting position for each instance for each first (or last) letter in the ELS; For
-example, if you are searching for a word that begins (or ends) with the letter Mem (מ) in the text, index
-number n is the index position number for each instance found of the letter Mem (מ), and for each
+*n* = index number starting position for each instance for each first (or last) letter in the ELS;
+
+For example, if you are searching for a word that begins (or ends) with the letter Mem (מ) in the text (e.g. משיח), index
+number *n* is the index position number(s) for each instance found of the letter Mem (מ), and for each
 instance of these letters Mem (מ) found, there is the potential to find multiple ELSs beginning (or
 ending) on that letter.
+
+Because the letter Mem (מ) is one of the five Hebrew letters with an alternate form if coming as the final letter of a word (ם), the central algorithm efficiently handles this eventuality of ELS Searches: instead of search for either ("regular letter form or final letter form") of the two possible letter formats, it is more useful for extrapolated permutations of useful functionalities of this program to convert all Hebrew letters to their equivalent Hebrew Gematria Numerical values and then search for these integer numbers. Later, when presenting the results to the user in visual format, we simply reference the Custom Class (Letter Object)'s ``.Letter`` property.  
 
 
 
