@@ -156,6 +156,8 @@ For any text chosen (e.g. Genesis, Exodus, Leviticus, Numbers, Deuteronomy, or a
 
 After choosing the text(s) to be searched, a Python dictionary ``D`` (with no spaces) and ``DS`` (with spaces) are created to contain each verse - accessible by 3-digit Tuple Key.
 
+The ``DS`` Dictionary Object may be useful for the interactive user-developer to access the specific verses with the words readable with spaces; The ``D`` Dictionary Object will be more useful to a computer. 
+
 Each verse (and letter) of the thirty-nine (39) books of the Hebrew Bible is accessible via the Python dictionaries ``D`` and ``DS`` with a unique 3-digit Tuple Key as per following examples:
 
 ``D`` Object - Dictionary of Verses (with No Spaces), accessible as data with a 3-digit Tuple Key::
