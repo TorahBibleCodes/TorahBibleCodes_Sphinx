@@ -367,7 +367,11 @@ Assuming 304850 letters for entire Torah selected::
    L[304845:304850] --> ['י', 'ש', 'ר', 'א', 'ל']
    N[304845:304850] --> [10, 300, 200, 1, 30]
    
-Each letter's Hebrew Kabbalah Numerical Gematria Value is obtainable by passing a string-sequence to a :py:func:`mod_9A_GetNumberValues4Letters.fn_GetNumberValues` MODULE.FUNCTION() call (NOTE: Numbers returned in the ``N`` Object are left-to-right (L-T-R); In previous, older versions of Python, Hebrew letters returned in ``L`` Object were right-to-left (R-T-L); However, in development version of Python 3.9+, these same Hebrew letters returned are left-to-right (L-T-R), so now the Hebrew letter order is exactly the same as all other orders in the Python Lists: L-T-R).
+Each letter's Hebrew Kabbalah Numerical Gematria Value is obtainable by passing a string-sequence to a :py:func:`mod_9A_GetNumberValues4Letters.fn_GetNumberValues` MODULE.FUNCTION() call.
+
+**NOTE:** 
+
+In previous, older versions of Python, Hebrew letters returned in ``L`` Object were right-to-left (R-T-L); However, in development version of Python 3.9+, these same Hebrew letters returned are left-to-right (L-T-R), so now the Hebrew letter order is consistent with all other orders in sequences Python Lists: (L-T-R). Numbers returned in the ``N`` Object are left-to-right (L-T-R); 
 
 Because of the possibility of five (5) Hebrew letters to have a second, alternate (final letter) form, all Hebrew Unicode letters are converted to their numerical equivalent so that search for ELSs is via Gematria Integer Number value::
 
