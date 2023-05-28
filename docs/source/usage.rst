@@ -265,9 +265,13 @@ From the ``D`` and ``DS`` Objects, all other Python Data Objects are derived:
 For example:
 
 1.) one (1) text only (# of letters varies)
+
 2.) either all five (5) texts of the Torah (304850 letters) together
+
 3.) all twenty-one (21) texts of the Prophets (553785 letters)
+
 4.) all thirteen (13) texts of the Writings (338407 letters)
+
 5.) all thirty-nine (39) texts of the entire Hebrew Bible (1197042  letters) together
 
 It is this 5th number of this 5-integer tuple key of the ``D5`` that serves as the primary key and unique identifier for every letter object in the selected text(s); Assuming 304850 letters for entire Torah selected::
@@ -308,26 +312,41 @@ It is this 5th number of this 5-integer tuple key of the ``D5`` that serves as t
 
    ## 0-BASED INDEX POSITIONS
    
+   ## FIRST SIX LETTERS OF TORAH: GENESIS
    L[0:6] --> ['ב', 'ר', 'א', 'ש', 'י', 'ת']
+   
+   ## LAST FIVE LETTERS OF TORAH: DEUTERONOMY
    L[-5:] --> ['י', 'ש', 'ר', 'א', 'ל']
+   
+   ## LAST FIVE LETTERS OF TORAH: DEUTERONOMY
    L[304845:304850] --> ['י', 'ש', 'ר', 'א', 'ל']
 
 ``S`` Object - String of Letters::
 
    ## 0-BASED INDEX POSITIONS
    
+   ## FIRST SIX LETTERS OF TORAH: GENESIS
    S[0:6] --> 'בראשית'
+   
+   ## LAST FIVE LETTERS OF TORAH: DEUTERONOMY
    S[-5:] --> 'ישראל'
+   
+   ## LAST FIVE LETTERS OF TORAH: DEUTERONOMY
    S[304845:304850] --> 'ישראל'
 
 ``N`` Object - List of Gematria Number Values::
 
    ## 0-BASED INDEX POSITIONS
    
+   ## FIRST SIX LETTERS OF TORAH: GENESIS
    L[0:6] --> ['ב', 'ר', 'א', 'ש', 'י', 'ת']
    N[0:6] --> [2, 200, 1, 300, 10, 400]
+   
+   ## LAST FIVE LETTERS OF TORAH: DEUTERONOMY
    L[-5:] --> ['י', 'ש', 'ר', 'א', 'ל']
    N[-5:] --> [10, 300, 200, 1, 30]
+   
+   ## LAST FIVE LETTERS OF TORAH: DEUTERONOMY
    L[304845:304850] --> ['י', 'ש', 'ר', 'א', 'ל']
    N[304845:304850] --> [10, 300, 200, 1, 30]
    
@@ -335,6 +354,8 @@ Each letter's Hebrew Kabbalah Numerical Gematria Value is obtainable by passing 
 
 Because of the possibility of five (5) Hebrew letters to have a second, alternate (final letter) form, all Hebrew Unicode letters are converted to their numerical equivalent so that search for ELSs is via Gematria Integer Number value::
 
+   ## HEBREW GEMATRIA NUMERICAL VALUES FOR EQUIVALENT HEBREW LETTERS
+   
    א = 1
    ב = 2
    3 = ג
@@ -366,8 +387,10 @@ Because of the possibility of five (5) Hebrew letters to have a second, alternat
    
    ## 1-BASED DICTIONARY KEY-POSITIONS
    
-   In [1]: DW[1]
-   Out[1]: (בראשית , [1, 2, 3, 4, 5, 6], (1, [2, 200, 1, 300, 10, 400], 913))
+   In [1]: DW[1] --> ('HebrewWord' , [1, 2, 3, 4, 5, 6], (1, [2, 200, 1, 300, 10, 400], 913))
+   
+   ('בראשית' , [1, 2, 3, 4, 5, 6], (1, [2, 200, 1, 300, 10, 400], 913))
+   
 
    In [2]: DW[2]
    Out[2]: (ברא , [7, 8, 9], (2, [2, 200, 1], 203))
