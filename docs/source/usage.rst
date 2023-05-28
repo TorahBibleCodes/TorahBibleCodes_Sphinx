@@ -408,39 +408,41 @@ Because of the possibility of five (5) Hebrew letters to have a second, alternat
    
    ## 1-BASED DICTIONARY KEY-POSITIONS
    
+   ## QUIRK IN IPYTHON PRESENTING UNICODE HEBREW TEXT WITHIN COMPLEX TUPLE OF NUMBERS
+   ## LEFT-TO-RIGHT ORDER
    In [1]: DW[1] --> ('HebrewWord' , [1, 2, 3, 4, 5, 6], (1, [2, 200, 1, 300, 10, 400], 913))
    
-   ('בראשית' , [1, 2, 3, 4, 5, 6], (1, [2, 200, 1, 300, 10, 400], 913))
+   ## ERROR WITH PRESENTING UNICODE HEBREW TEXT WITHIN COMPLEX TUPLE OF NUMBERS)
+   ## RIGHT-TO-LEFT ORDER
+   --> ('בראשית' , [1, 2, 3, 4, 5, 6], (1, [2, 200, 1, 300, 10, 400], 913))
    
+   ## THUS THE NEED TO PRESENT THIS INFO WITHOUT QUOTES TO PRESERVE THE ORDER
+   --> (בראשית , [1, 2, 3, 4, 5, 6], (1, [2, 200, 1, 300, 10, 400], 913))
+      
+   In [2]: DW[2] --> (ברא , [7, 8, 9], (2, [2, 200, 1], 203))
+   
+   In [3]: DW[3] --> (אלהים, [10, 11, 12, 13, 14], (3, [1, 30, 5, 10, 40], 86))
+   
+   In [4]: DW[4] --> (את , [15, 16], (4, [1, 400], 401)) 
 
-   In [2]: DW[2]
-   Out[2]: (ברא , [7, 8, 9], (2, [2, 200, 1], 203))
+   In [5]: DW[5] --> (השמים , [17, 18, 19, 20, 21], (5, [5, 300, 40, 10, 40], 395))
 
-   In [3]: DW[3]
-   Out[3]: (אלהים, [10, 11, 12, 13, 14], (3, [1, 30, 5, 10, 40], 86))
+   In [6]: DW[6] --> (ואת , [22, 23, 24], (6, [6, 1, 400], 407))
 
-   In [4]: DW[4]
-   Out[4]: (את , [15, 16], (4, [1, 400], 401))
-
-   In [5]: DW[5]
-   Out[5]: (השמים , [17, 18, 19, 20, 21], (5, [5, 300, 40, 10, 40], 395))
-
-   In [6]: DW[6]
-   Out[6]: (ואת , [22, 23, 24], (6, [6, 1, 400], 407))
-
-   In [7]: DW[7]
-   Out[7]: (הארץ , [25, 26, 27, 28], (7, [5, 1, 200, 90], 296))
+   In [7]: DW[7] --> (הארץ , [25, 26, 27, 28], (7, [5, 1, 200, 90], 296))
 
 
-Custom Class: Letter Objects (LO)
+Custom Class: Letter Object (LO)
 ----------------
 
 ``DLO`` Object - Dictionary of Letter Objects::
 
 Custom Letter Objects (LO)
 
+Because of the need to keep track of complex relationships between letter objects, we...
 
-Custom Class: Equidistant Letter Sequence (ELS) Objects (ELSO)
+
+Custom Class: Equidistant Letter Sequence (ELS) Object (ELSO)
 ----------------
 
 ``DELSO`` Object - Dictionary of Equidistant Letter Sequence (ELS) Objects::
@@ -450,6 +452,8 @@ Custom Equidistant Letter Sequence Objects (ELSO)
 
 Custom Class: Global Search Object (GSO)
 ----------------
+
+``gso`` Object - Global Search Object::
 
 Custom Global Search Object (GSO)
 
