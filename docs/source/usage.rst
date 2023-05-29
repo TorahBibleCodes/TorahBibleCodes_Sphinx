@@ -110,11 +110,11 @@ For example::
 Equidistant Letter Sequences (ELSs)
 ----------------
 
-Witztum, Rips, and Rosenberg (WRR 1994) define an Equidistant Letter Sequence (ELS) as a sequence of letters in the text whose positions - not counting spaces - form an arithmetic progression. That is to say the letters are found at the positions::
+   Witztum, Rips, and Rosenberg (WRR 1994) define an Equidistant Letter Sequence (ELS) as a sequence of letters in the text whose positions - not counting spaces - form an arithmetic progression. That is to say the letters are found at the positions::
 
    n, (n + d), (n + 2d), (n + 3d) ..., (n + (k - 1)d)
 
-WRR define *n* as the start, *d* as the skip between letters in the search-term, and *k* as the length of the ELS. These three parameters uniquely identify the ELS which is denoted (*n*, *d*, *k*).
+   WRR define *n* as the start, *d* as the skip between letters in the search-term, and *k* as the length of the ELS. These three parameters uniquely identify the ELS which is denoted (*n*, *d*, *k*).
 
 For example::
 
@@ -130,12 +130,12 @@ For example::
 
 *n* = index number starting position for each instance for each first (or last) letter in the ELS;
 
-For example, if you are searching for a word that begins (or ends) with the letter Mem (מ/ם) in the text (e.g. משיח), index
+   For example, if you are searching for a word that begins (or ends) with the letter Mem (מ/ם) in the text (e.g. משיח), index
 number *n* is the index position number(s) for each instance found (i.e. for each *n*) of the letter Mem (מ/ם), and for each
 instance of these letters Mem (מ/ם) found, there is the potential to find multiple ELSs beginning (or
 ending) on that letter.
 
-Because the letter Mem (מ) is one of the five Hebrew letters with an alternate form if coming as the final letter (ם) of a word, the central algorithm efficiently handles this eventuality of ELS Searches: instead of search for either ("regular letter form or final letter form") of the two possible letter formats, it is more efficient to convert all Hebrew letters to their equivalent Hebrew Gematria Numerical values and then search for these integer numbers. 
+   Because the letter Mem (מ) is one of the five Hebrew letters with an alternate form if coming as the final letter (ם) of a word, the central algorithm efficiently handles this eventuality of ELS Searches: instead of search for either ("regular letter form or final letter form") of the two possible letter formats, it is more efficient to convert all Hebrew letters to their equivalent Hebrew Gematria Numerical values and then search for these integer numbers. 
 
 *d* = equidistant skip distance(s) between each letter in the ELS successfully found within the
 selected text that is searched (i.e. for each *n*); For each instance of a letter found at index number position *n*, there may
@@ -438,7 +438,16 @@ In previous, older versions of Python, Hebrew letters stored in Python memory as
    
 ``DW4ELS`` Object - Dictionary of Words for ELSs:
 
- The TorahBibleCodes app can be used as a Hebrew Gematria Number calculator for Hebrew words (i.e. ELSs) that you wish to search for:
+The TorahBibleCodes app can be used as a Hebrew Gematria Number calculator for Hebrew words (i.e. ELSs) that you wish to search for::
+
+   In [1]: DW4ELS --> {1: ('משיח', (1, [40, 300, 10, 8], 358)),
+ 2: ('המשיח', (2, [5, 40, 300, 10, 8], 363))}
+   
+   \\' בראשית \\'
+   In [2]: DW4ELS[1] --> ('המשיח', (2, [5, 40, 300, 10, 8], 363))
+   
+   In [3]: DW4ELS[2] --> ('המשיח', (2, [5, 40, 300, 10, 8], 363))
+   
 
 
 Custom Class: Letter Object (LO)
