@@ -460,7 +460,7 @@ For each letter in the selected text(s), an instance of the Custom Class of Lett
 
    ## FIRST LETTER OF TORAH: GENESIS
    In [1]: DLO[1].Letter --> 'ב'
-   In [2]: DLO[2].LetterGematriaNumberValue --> [2]
+   In [2]: DLO[2].LetterGematriaNumberValue --> 2
    In [3]: DLO[3].LetterPositionIndex --> 1 ## 1-BASED DICTIONARY KEY-POSITIONS
    In [4]: DLO[4].LetterCoordinatesD5K --> (1, 1, 1, 1, 1) ## 1-BASED DICTIONARY KEY-POSITIONS: RETURNS ## 5-DIGIT-TUPLE-BASED DICTIONARY VALUE OF (BOOK#, CHAPTER#, VERSE#, LETTER#INVERSE, LETTER#INTEXT)
    In [5]: DLO[5].LetterCoordinatesDL --> (1, 1, 1, 1) ## 1-BASED DICTIONARY KEY-POSITIONS: RETURNS ## 4-DIGIT-TUPLE-BASED DICTIONARY VALUE OF (BOOK#, CHAPTER#, VERSE#, LETTER#INVERSE)
@@ -468,7 +468,7 @@ For each letter in the selected text(s), an instance of the Custom Class of Lett
    
    ## LAST LETTER OF TORAH: DEUTERONOMY
    In [7]: DLO[304850].Letter --> 'ל'
-   In [8]: DLO[304850].LetterGematriaNumberValue --> [30]
+   In [8]: DLO[304850].LetterGematriaNumberValue --> 30
    In [9]: DLO[304850].LetterPositionIndex --> 304850 ## 1-BASED DICTIONARY KEY-POSITIONS
    In [10]: DLO[304850].LetterCoordinatesD5K --> (5, 34, 12, 47, 304850) ## 1-BASED DICTIONARY KEY-POSITIONS: RETURNS ## 5-DIGIT-TUPLE-BASED DICTIONARY VALUE OF (BOOK#, CHAPTER#, VERSE#, LETTER#INVERSE, LETTER#INTEXT)
    In [11]: DLO[304850].LetterCoordinatesDL --> (5, 34, 12, 47) ## 1-BASED DICTIONARY KEY-POSITIONS: RETURNS ## 4-DIGIT-TUPLE-BASED DICTIONARY VALUE OF (BOOK#, CHAPTER#, VERSE#, LETTER#INVERSE)
