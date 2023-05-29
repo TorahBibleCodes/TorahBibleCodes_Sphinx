@@ -454,6 +454,44 @@ The TorahBibleCodes app can be used as a Hebrew Gematria Number calculator for H
 Custom Class: Letter Object (LO)
 ----------------
 
+``LO`` Object - Letter Object:
+
+For each letter in the selected text(s), an instance of the Custom Class of Letter Object (LO) is created to bind and contain critical information for that letter, e.g. the unique letter position *n* of that letter object, the Boolean Value of whether that letter is a match in one or more ELSs, etc.::
+
+   ## FIRST LETTER OF TORAH: GENESIS
+   In [1]: DLO[1].Letter --> 'ב'
+   In [2]: DLO[2].LetterGematriaNumberValue --> [2]
+   In [3]: DLO[3].LetterPositionIndex --> 1 ## 1-BASED DICTIONARY KEY-POSITIONS
+   In [4]: DLO[4].LetterCoordinatesD5K --> (1, 1, 1, 1, 1) ## 1-BASED DICTIONARY KEY-POSITIONS: RETURNS ## 5-DIGIT-TUPLE-BASED DICTIONARY VALUE OF (BOOK#, CHAPTER#, VERSE#, LETTER#INVERSE, LETTER#INTEXT)
+   In [5]: DLO[5].LetterCoordinatesDL --> (1, 1, 1, 1) ## 1-BASED DICTIONARY KEY-POSITIONS: RETURNS ## 4-DIGIT-TUPLE-BASED DICTIONARY VALUE OF (BOOK#, CHAPTER#, VERSE#, LETTER#INVERSE)
+   In [6]: DLO[6].WordNumber --> 1
+   
+   ## LAST LETTER OF TORAH: DEUTERONOMY
+   In [7]: DLO[304850].Letter --> 'ל'
+   In [8]: DLO[304850].LetterGematriaNumberValue --> [30]
+   In [9]: DLO[304850].LetterPositionIndex --> 304850 ## 1-BASED DICTIONARY KEY-POSITIONS
+   In [10]: DLO[304850].LetterCoordinatesD5K --> (5, 34, 12, 47, 304850) ## 1-BASED DICTIONARY KEY-POSITIONS: RETURNS ## 5-DIGIT-TUPLE-BASED DICTIONARY VALUE OF (BOOK#, CHAPTER#, VERSE#, LETTER#INVERSE, LETTER#INTEXT)
+   In [11]: DLO[304850].LetterCoordinatesDL --> (5, 34, 12, 47) ## 1-BASED DICTIONARY KEY-POSITIONS: RETURNS ## 4-DIGIT-TUPLE-BASED DICTIONARY VALUE OF (BOOK#, CHAPTER#, VERSE#, LETTER#INVERSE)
+   In [12]: DLO[304850].WordNumber --> 79982
+   
+
+Each letter object (LO) is stored in a Python Dictionary of Letter Objects ``DLO`` with 1-Based Dictionary Key-Positions::
+
+   ## FIRST SIX LETTERS OF TORAH: GENESIS
+   In [1]: DLO[1].Letter --> 'ב'
+   In [2]: DLO[2].Letter --> 'ר'
+   In [3]: DLO[3].Letter --> 'א'
+   In [4]: DLO[4].Letter --> 'ש'
+   In [5]: DLO[5].Letter --> 'י'
+   In [6]: DLO[6].Letter --> 'ת'
+   
+   ## LAST FIVE LETTERS OF TORAH: DEUTERONOMY
+   In [7]: DLO[304846].Letter --> 'י'
+   In [8]: DLO[304847].Letter --> 'ש'
+   In [9]: DLO[304848].Letter --> 'ר'
+   In [10]: DLO[304849].Letter --> 'א'
+   In [11]: DLO[304850].Letter --> 'ל'
+
 ``DLO`` Object - Dictionary of Letter Objects:
 
 For each letter in the selected text(s), an instance of the Custom Class of Letter Object (LO) is created to bind and contain critical information for that letter, e.g. the unique letter position *n* of that letter object, the Boolean Value of whether that letter is a match in one or more ELSs, etc.
@@ -474,7 +512,7 @@ Each letter object (LO) is stored in a Python Dictionary of Letter Objects ``DLO
    In [9]: DLO[304848].Letter --> 'ר'
    In [10]: DLO[304849].Letter --> 'א'
    In [11]: DLO[304850].Letter --> 'ל'
-
+   
 Custom Class: Equidistant Letter Sequence (ELS) Object (ELSO)
 ----------------
 
