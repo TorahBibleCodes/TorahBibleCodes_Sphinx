@@ -440,8 +440,6 @@ In previous, older versions of Python, Hebrew letters stored in Python memory as
 
 The TorahBibleCodes app can be used as a Hebrew Gematria Number calculator for Hebrew words (i.e. ELSs) that you wish to search for::
 
-Hello test::
-
    ## PLEASE NOTE BUG IN READ THE DOC'S PRESENTATION OF THE HEBREW UNICODE TEXT STRING WITHIN THIS COMPLEX TUPLE
    
    In [1]: DW4ELS --> {1: ('משיח', (1, [40, 300, 10, 8], 358)),
@@ -458,7 +456,7 @@ Custom Class: Letter Object (LO)
 
 ``DLO`` Object - Dictionary of Letter Objects:
 
-For each letter in the selected text(s), instances of a custom Class of Letter Object (LO) are created to bind and contain critical information for that letter, e.g. the unique letter position *n* of that letter object, the Boolean Value of whether that letter is a match in one or more ELSs, etc.
+For each letter in the selected text(s), an instance of the Custom Class of Letter Object (LO) is created to bind and contain critical information for that letter, e.g. the unique letter position *n* of that letter object, the Boolean Value of whether that letter is a match in one or more ELSs, etc.
 
 Each letter object (LO) is stored in a Python Dictionary of Letter Objects ``DLO`` with 1-Based Dictionary Key-Positions::
 
