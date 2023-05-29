@@ -550,12 +550,41 @@ There are several ways one can implement WRR's Central Search Algorithm (i.e. Fo
 
 For our purposes it is most efficient to convert all Hebrew letters to their Gematria Number equivalent, and then search for either the first or last letter in each ELS Search term - or both.
 
-We can search for the first letter (מ/ם) and (ה) for each ELS Search Term, and then search both forwards and backwards for ELS Matches.
+We can search for the first letter Mem (מ/ם) and Hey (ה) for each ELS Search Term, and then search both forwards (+) and backwards (-) for ELS Matches, i.e. doing two (2) searches: 1.) From the first letter searching forwards (+); 2.) From the first letter searching backwards (-).
 
-**AND/OR:** We can search for the first letter (מ/ם) and (ה) AS WELL AS the last letter (ה) for each ELS Search Term, and search only forwards for ELS Matches.   
+**AND/OR:** We can search for the first letter Mem (מ/ם) and Hey (ה) AS WELL AS the last letter Het (ח) for each ELS Search Term, and search only forwards for ELS Matches, i.e. doing two (2) searches: 1.) From the first letter searching forwards (+) only; 2.) From the last letter search forwards (+) only.   
 
-Therefore, we can obtain the letter position index numbers *n* of matches for each of these critical letter objects.
+Therefore, we can obtain the letter position index numbers *n* of matches for each of these critical first and last letter objects for each ELS Search Term::
 
+   ## 40 == מ / ם
+   In [1]: len(DELSO[1].ListOfListsOfIndexMatches[0]) --> 25090 ## NUMBER OF MATCHES FOR 1ST LETTER IN 1ST ELS SEARCH TERM
+   
+   ## FIRST TEN (10) INDEX POSITION MATCHES (n) FOR EACH MATCH IN SELECTED TEXT FOR 1ST LETTER IN 1ST ELS TERM
+   In [1]: DELSO[1].ListOfListsOfIndexMatches[0][0] --> 14
+   In [2]: DELSO[1].ListOfListsOfIndexMatches[0][1] --> 19
+   In [3]: DELSO[1].ListOfListsOfIndexMatches[0][2] --> 21
+   In [4]: DELSO[1].ListOfListsOfIndexMatches[0][3] --> 57
+   In [5]: DELSO[1].ListOfListsOfIndexMatches[0][4] --> 66
+   In [6]: DELSO[1].ListOfListsOfIndexMatches[0][5] --> 67
+   In [7]: DELSO[1].ListOfListsOfIndexMatches[0][6] --> 78
+   In [8]: DELSO[1].ListOfListsOfIndexMatches[0][7] --> 80
+   In [9]: DELSO[1].ListOfListsOfIndexMatches[0][8] --> 84
+   In [10]: DELSO[1].ListOfListsOfIndexMatches[0][9] --> 90
+   
+   ## LAST TEN (10) INDEX POSITION MATCHES (n) FOR EACH MATCH IN SELECTED TEXT FOR 1ST LETTER IN 1ST ELS TERM
+   
+   In []: DELSO[1].ListOfListsOfIndexMatches[0][] --> 
+   In []: DELSO[1].ListOfListsOfIndexMatches[0][25080] --> 304702
+   In []: DELSO[1].ListOfListsOfIndexMatches[0][25081] --> 304717
+   In []: DELSO[1].ListOfListsOfIndexMatches[0][25082] --> 304734
+   In []: DELSO[1].ListOfListsOfIndexMatches[0][25083] --> 304740
+   In []: DELSO[1].ListOfListsOfIndexMatches[0][25084] --> 304751
+   In []: DELSO[1].ListOfListsOfIndexMatches[0][25085] --> 304756
+   In []: DELSO[1].ListOfListsOfIndexMatches[0][25086] --> 304777
+   In []: DELSO[1].ListOfListsOfIndexMatches[0][25087] --> 304781
+   In []: DELSO[1].ListOfListsOfIndexMatches[0][25088] --> 304821
+   In []: DELSO[1].ListOfListsOfIndexMatches[0][25089] --> 304836
+   
 Custom Class: Global Search Object (GSO)
 ----------------
 
