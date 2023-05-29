@@ -503,6 +503,8 @@ Custom Class: Equidistant Letter Sequence (ELS) Object (ELSO)
 
 For each ELS Search Term that is inputted by the user, an instance of the Custom Class of Equidistant Letter Sequence (ELS) Object (``ELSO``) is created to bind and contain critical information for that ELS Search Term, e.g. Letters (i.e. Gematria Number Values) for that ELS Search Term, the length *k* of that ELS Search Term, Maximum Possible Skip Distance (defined by Haralick [CITE CITATION]), Lists of Lists of Index Matches for each letter of each ELS Search Term.
 
+``DELSO`` Object - Dictionary of Equidistant Letter Sequence (ELS) Objects:
+
 Each Equidistant Letter Sequence (ELS) Object (``ELSO``) is stored in a Python Dictionary of Equidistant Letter Sequence (ELS) Objects ``DELSO`` with 1-Based Dictionary Key-Positions.
 
 **Assuming 304850 letters for entire Torah selected**::
@@ -541,11 +543,6 @@ Each Equidistant Letter Sequence (ELS) Object (``ELSO``) is stored in a Python D
    ## 8 == ח
    In [9]: len(DELSO[2].ListOfListsOfIndexMatches[4]) --> 7189 ## NUMBER OF MATCHES FOR 5TH LETTER IN 2ND ELS SEARCH TERM
    
-   
-
-``DELSO`` Object - Dictionary of Equidistant Letter Sequence (ELS) Objects:
-
-Custom Equidistant Letter Sequence Objects (ELSO)
 
 
 Custom Class: Global Search Object (GSO)
