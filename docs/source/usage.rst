@@ -435,12 +435,16 @@ In previous, older versions of Python, Hebrew letters stored in Python memory as
    In [6]: DW[6] --> (ואת , [22, 23, 24], (6, [6, 1, 400], 407))
 
    In [7]: DW[7] --> (הארץ , [25, 26, 27, 28], (7, [5, 1, 200, 90], 296))
+   
+``DW4ELS`` Object - Dictionary of Words for ELSs:
+
+ The TorahBibleCodes app can be used as a Hebrew Gematria Number calculator for Hebrew words (i.e. ELSs) that you wish to search for:
 
 
 Custom Class: Letter Object (LO)
 ----------------
 
-``DLO`` Object - Dictionary of Letter Objects::
+``DLO`` Object - Dictionary of Letter Objects:
 
 For each letter in the selected text(s), instances of a custom Class of Letter Object (LO) are created to bind and contain critical information for that letter, e.g. the unique letter position *n* of that letter object, the Boolean Value of whether that letter is a match in one or more ELSs, etc.
 
