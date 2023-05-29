@@ -554,7 +554,9 @@ We can search for the first letter Mem (מ/ם) and Hey (ה) for each ELS Search 
 
 **AND/OR:** We can search for the first letter Mem (מ/ם) and Hey (ה) AS WELL AS the last letter Het (ח) for each ELS Search Term, and search only forwards for ELS Matches, i.e. doing two (2) searches: 1.) From the first letter searching forwards (+) only; 2.) From the last letter search forwards (+) only.   
 
-Therefore, we can obtain the letter position index numbers *n* of matches for each of these critical first and last letter objects for each ELS Search Term::
+Therefore, we can obtain the letter position index numbers *n* of matches for each of these critical first and last letter objects for each ELS Search Term:
+
+**Assuming 304850 letters for entire Torah selected**::
 
    ## 40 == מ / ם
    In [1]: len(DELSO[1].ListOfListsOfIndexMatches[0]) --> 25090 ## NUMBER OF MATCHES FOR 1ST LETTER IN 1ST ELS SEARCH TERM
@@ -572,17 +574,35 @@ Therefore, we can obtain the letter position index numbers *n* of matches for ea
    In [10]: DELSO[1].ListOfListsOfIndexMatches[0][9] --> 90
    
    ## LAST TEN (10) INDEX POSITION MATCHES (n) FOR EACH MATCH IN SELECTED TEXT FOR 1ST LETTER IN 1ST ELS TERM
-   In []: DELSO[1].ListOfListsOfIndexMatches[0][25080] --> 304702
-   In []: DELSO[1].ListOfListsOfIndexMatches[0][25081] --> 304717
-   In []: DELSO[1].ListOfListsOfIndexMatches[0][25082] --> 304734
-   In []: DELSO[1].ListOfListsOfIndexMatches[0][25083] --> 304740
-   In []: DELSO[1].ListOfListsOfIndexMatches[0][25084] --> 304751
-   In []: DELSO[1].ListOfListsOfIndexMatches[0][25085] --> 304756
-   In []: DELSO[1].ListOfListsOfIndexMatches[0][25086] --> 304777
-   In []: DELSO[1].ListOfListsOfIndexMatches[0][25087] --> 304781
-   In []: DELSO[1].ListOfListsOfIndexMatches[0][25088] --> 304821
-   In []: DELSO[1].ListOfListsOfIndexMatches[0][25089] --> 304836
+   In [11]: DELSO[1].ListOfListsOfIndexMatches[0][25080] --> 304702
+   In [12]: DELSO[1].ListOfListsOfIndexMatches[0][25081] --> 304717
+   In [13]: DELSO[1].ListOfListsOfIndexMatches[0][25082] --> 304734
+   In [14]: DELSO[1].ListOfListsOfIndexMatches[0][25083] --> 304740
+   In [15]: DELSO[1].ListOfListsOfIndexMatches[0][25084] --> 304751
+   In [16]: DELSO[1].ListOfListsOfIndexMatches[0][25085] --> 304756
+   In [17]: DELSO[1].ListOfListsOfIndexMatches[0][25086] --> 304777
+   In [18]: DELSO[1].ListOfListsOfIndexMatches[0][25087] --> 304781
+   In [19]: DELSO[1].ListOfListsOfIndexMatches[0][25088] --> 304821
+   In [20]: DELSO[1].ListOfListsOfIndexMatches[0][25089] --> 304836
+
+**Test Driven Development**:
+
+Let's test the both the first and last results that will be easily confirmable by a human::
+
+   ## TEST-DRIVEN DEVELOPMENT: TEST RESULTS FOR FIRST INSTANCE OF LETTER POSITION MATCH (n)
+   In [1]: DELSO[1].ListOfListsOfIndexMatches[0][0] --> 14
+   In [2]: DLO[14].Letter --> 'ם'
+   In [3]: DLO[14].LetterGematriaNumberValue --> 40
+   In [4]: DLO[14].WordNumber --> 3
+   In [5]: DW[3] --> ('אלהים', [10, 11, 12, 13, 14], (3, [1, 30, 5, 10, 40], 86)) ## (אלהים , [10, 11, 12, 13, 14], (3, [1, 30, 5, 10, 40], 86))
    
+   ## TEST-DRIVEN DEVELOPMENT: TEST RESULTS FOR LAST INSTANCE OF LETTER POSITION MATCH (n)
+   In [6]: DELSO[1].ListOfListsOfIndexMatches[0][25089] --> 304836
+   In [7]: DLO[304836].Letter --> 'מ'
+   In [8]: DLO[304836].LetterGematriaNumberValue --> 40
+   In [9]: DLO[304836].WordNumber --> 79979
+   In [10]: DW[79979] --> ('משה', [304836, 304837, 304838], (79979, [40, 300, 5], 345)) ## (משה , [304836, 304837, 304838], (79979, [40, 300, 5], 345))
+
 Custom Class: Global Search Object (GSO)
 ----------------
 
