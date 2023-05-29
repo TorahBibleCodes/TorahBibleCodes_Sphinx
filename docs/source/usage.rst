@@ -275,7 +275,7 @@ For example:
 
 5.) All thirty-nine (39) texts of the entire Hebrew Bible (1197042 letters) together.
 
-The 5-Integer Tuple-Key / Tuple-Value
+Unique Identifier: The 5-Integer Tuple-Key / Tuple-Value
 ----------------
 
 It is this 5th number of this 5-integer tuple-key of the ``D5`` Object (as well as the 5-integer tuple-value of the ``D5K`` Object) that serves as the primary key - and thus the unique identifier - for every letter object in the selected text(s).
