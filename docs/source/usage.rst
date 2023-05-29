@@ -503,7 +503,7 @@ Custom Class: Equidistant Letter Sequence (ELS) Object (ELSO)
 
 For each ELS Search Term that is inputted by the user, an instance of the Custom Class of Equidistant Letter Sequence (ELS) Object (``ELSO``) is created to bind and contain critical information for that ELS Search Term, e.g. Lists of Lists of Index Matches for each letter of each ELS Search Term.
 
-Each Equidistant Letter Sequence (ELS) Object (``ELSO``) is stored in a Python Dictionary of Letter Objects ``DELSO`` with 1-Based Dictionary Key-Positions.
+Each Equidistant Letter Sequence (ELS) Object (``ELSO``) is stored in a Python Dictionary of Equidistant Letter Sequence (ELS) Objects ``DELSO`` with 1-Based Dictionary Key-Positions.
 
 **Assuming 304850 letters for entire Torah selected**::
 
