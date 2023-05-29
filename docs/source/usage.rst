@@ -8,16 +8,15 @@ Installation
 
 To use TorahBibleCodes:
 
-   1.) DOWNLOAD and INSTALL PYTHON on your local computer: https://www.python.org/downloads/
+1.) DOWNLOAD and INSTALL PYTHON on your local computer: https://www.python.org/downloads/
 
-   2.) In the folder where Python has been installed, Open a Command Line Interface (CLI) such as Windows PowerShell or the equivalent on other Apple and Linux devices, and then INSTALL ``ipython`` interactive python (IPython) development environment via ``pip install`` at the command prompt.
+2.) In the folder where Python has been installed, Open a Command Line Interface (CLI) such as Windows PowerShell or the equivalent on other Apple and Linux devices, and then INSTALL ``ipython`` interactive python (IPython) development environment via ``pip install`` at the command prompt.
 
 .. code-block:: console
 
    C:\python> pip install ipython
    
-
-   3.) DOWNLOAD the TorahBibleCodes GitHub Repo ZIP file or clone the GitHub repo to your local computer: https://github.com/torahbiblecodes/torahbiblecodes
+3.) DOWNLOAD the TorahBibleCodes GitHub Repo ZIP file or clone the GitHub repo to your local computer: https://github.com/torahbiblecodes/torahbiblecodes
 
 .. code-block:: console
 
@@ -111,11 +110,11 @@ For example::
 Equidistant Letter Sequences (ELSs)
 ----------------
 
-   Witztum, Rips, and Rosenberg (WRR 1994) define an Equidistant Letter Sequence (ELS) as a sequence of letters in the text whose positions - not counting spaces - form an arithmetic progression. That is to say the letters are found at the positions::
+Witztum, Rips, and Rosenberg (WRR 1994) define an Equidistant Letter Sequence (ELS) as a sequence of letters in the text whose positions - not counting spaces - form an arithmetic progression. That is to say the letters are found at the positions::
 
    n, (n + d), (n + 2d), (n + 3d) ..., (n + (k - 1)d)
 
-   WRR define *n* as the start, *d* as the skip between letters in the search-term, and *k* as the length of the ELS. These three parameters uniquely identify the ELS which is denoted (*n*, *d*, *k*).
+WRR define *n* as the start, *d* as the skip between letters in the search-term, and *k* as the length of the ELS. These three parameters uniquely identify the ELS which is denoted (*n*, *d*, *k*).
 
 For example::
 
@@ -125,9 +124,9 @@ For example::
 
 *k* = length of an ELS Search-Term, ELS, i.e. the number of letters in the word; here:
 
-   1.) The length *k* of ELS1 is 4.
+1.) The length *k* of ELS1 is 4.
 
-   2.) The length *k* of ELS2 is 5.
+2.) The length *k* of ELS2 is 5.
 
 *n* = index number starting position for each instance for each first (or last) letter in the ELS;
 
@@ -288,7 +287,7 @@ For any letter in the selected text(s), it is this 5th integer that is the prima
 
 Thus if one knows either the letter position *n* via the entire 5-integer tuple-number key/value or simply via the 5th number only, it is possible to retrieve that unique letter object at that position.
 
-**Assuming 304850 letters for entire Torah (or 1197042 letters for the entire Hebrew Bible) selected**::
+**Assuming 304850 letters for entire Torah selected**::
 
    ## 5-DIGIT-TUPLE-BASED DICTIONARY KEY POSITION OF (BOOK#, CHAPTER#, VERSE#, LETTER#INVERSE, LETTER#INTEXT) - NO SPACES BETWEEN WORDS/LETTERS
    
