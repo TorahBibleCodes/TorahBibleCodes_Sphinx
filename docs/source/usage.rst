@@ -558,6 +558,9 @@ Therefore, we can obtain the letter position index numbers *n* of matches for ea
 
 **Assuming 304850 letters for entire Torah selected**::
 
+   ## ELS SEARCH TERM: 'משיח' - 'Mashiach' - 'Messiah'
+   ## DELSO[1] ~ 'משיח'
+   
    ## 40 == מ / ם
    In [1]: len(DELSO[1].ListOfListsOfIndexMatches[0]) --> 25090 ## NUMBER OF MATCHES FOR 1ST LETTER IN 1ST ELS SEARCH TERM
    
