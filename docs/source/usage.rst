@@ -150,9 +150,9 @@ The essential objects in TorahBibleCodes are native Python data objects (i.e. st
 
 The source texts are digitized versions of the Leningrad Codex provided by https://Sefaria.org. 
 
-For any text chosen (e.g. Genesis, Exodus, Leviticus, Numbers, Deuteronomy, or all five (5) books of the Torah together, or all twenty-one (21) books of the Prophets, or all thirteen (13) books of the Writings, or all (or any of) thirty-nine (39) books of the entire Hebrew Bible), the text is parsed and Python dictionary objects ``D`` and ``DS`` are created that allow one to access each verse by 3-digit Tuple Key (Book, Chapter, Verse).
+For any text chosen (e.g. Genesis, Exodus, Leviticus, Numbers, Deuteronomy, or all five (5) books of the Torah together, or all twenty-one (21) books of the Prophets, or all thirteen (13) books of the Writings, or all (or any of) thirty-nine (39) books of the entire Hebrew Bible), the text is parsed and Python dictionary objects ``D`` and ``DS`` are created that allow one to access each verse by 3-digit Tuple-Key (Book, Chapter, Verse).
 
-After choosing the text(s) to be searched, a Python dictionary ``D`` (with no spaces) and ``DS`` (with spaces) are created to contain each verse - accessible by 3-digit Tuple Key.
+After choosing the text(s) to be searched, a Python dictionary ``D`` (with no spaces) and ``DS`` (with spaces) are created to contain each verse - accessible by 3-integer Tuple-Key.
 
 The ``DS`` Dictionary Object may be useful for the interactive user-developer to access the specific verses with the words readable with spaces; The ``D`` Dictionary Object will be more useful to a computer - but these two Python Dictionary Objects contain the same text(s).
 
@@ -160,7 +160,7 @@ Each verse (and letter) of the thirty-nine (39) books of the Hebrew Bible is acc
 
 ``D`` Object - Dictionary of Verses (with No Spaces), accessible as data with a 3-digit Tuple Key::
 
-   ## 3-DIGIT-TUPLE-BASED DICTIONARY KEY POSITION OF (BOOK#, CHAPTER#, VERSE#) - NO SPACES BETWEEN WORDS/LETTERS
+   ## 3-INTEGER-TUPLE-BASED DICTIONARY KEY POSITION OF (BOOK#, CHAPTER#, VERSE#) - NO SPACES BETWEEN WORDS/LETTERS
    
    D[1,1,1] --> GENESIS 1:1 - 1st Book, 1st Chapter, 1st Verse
    D[1,1,2] --> GENESIS 1:2 - 1st Book, 1st Chapter, 2nd Verse
@@ -192,7 +192,7 @@ Each verse (and letter) of the thirty-nine (39) books of the Hebrew Bible is acc
    
 ``DS`` Object - Dictionary of Verses (with Spaces), accessible as data with a 3-digit Tuple Key::
 
-   ## 3-DIGIT-TUPLE-BASED DICTIONARY KEY POSITION OF (BOOK#, CHAPTER#, VERSE#) - WITH SPACES BETWEEN WORDS/LETTERS
+   ## 3-INTEGER-TUPLE-BASED DICTIONARY KEY POSITION OF (BOOK#, CHAPTER#, VERSE#) - WITH SPACES BETWEEN WORDS/LETTERS
    
    DS[1,1,1] --> GENESIS 1:1 - 1st Book, 1st Chapter, 1st Verse
    DS[1,1,2] --> GENESIS 1:2 - 1st Book, 1st Chapter, 2nd Verse
@@ -224,7 +224,8 @@ Each verse (and letter) of the thirty-nine (39) books of the Hebrew Bible is acc
    
 ``D`` Object - Dictionary of Verses/Letters, accessible as data with a 3-digit Tuple Key + sub-element (0-indexed) in sequence of letters within each verse::
 
-   ## 3-DIGIT-TUPLE-BASED DICTIONARY KEY POSITION OF (BOOK#, CHAPTER#, VERSE#) - NO SPACES BETWEEN WORDS/LETTERS
+   ## 3-INTEGER-TUPLE-BASED DICTIONARY KEY POSITION OF (BOOK#, CHAPTER#, VERSE#) - NO SPACES BETWEEN WORDS/LETTERS
+   ## FOR EACH VERSE: THERE IS NATIVE PYTHON 0-BASED INDEX LIST OF LETTERS IN EACH VERSE
    
    D[1,1,1][0] --> 1st element (letter) in string/verse sequence --> 'ב'
    D[1,1,1][1] --> 2nd element (letter) in string/verse sequence --> 'ר'
@@ -243,7 +244,7 @@ From the ``D`` and ``DS`` Objects, all other Python Data Objects are derived:
 
 ``DL`` Object - Dictionary of Letters (with 4-integer tuple-key) with 4th element of tuple being the (non-0-indexed; 1-indexed) position of letter in verse::
 
-   ## 4-DIGIT-TUPLE-BASED DICTIONARY KEY POSITION OF (BOOK#, CHAPTER#, VERSE#, LETTER#INVERSE) - NO SPACES BETWEEN WORDS/LETTERS
+   ## 4-INTEGER-TUPLE-BASED DICTIONARY KEY POSITION OF (BOOK#, CHAPTER#, VERSE#, LETTER#INVERSE) - NO SPACES BETWEEN WORDS/LETTERS
    
    ## FIRST SIX LETTERS OF TORAH: GENESIS
    DL[1, 1, 1, 1] --> 'ב'
@@ -289,7 +290,7 @@ Thus if one knows either the letter position *n* via the entire 5-integer tuple-
 
 **Assuming 304850 letters for entire Torah selected**::
 
-   ## 5-DIGIT-TUPLE-BASED DICTIONARY KEY POSITION OF (BOOK#, CHAPTER#, VERSE#, LETTER#INVERSE, LETTER#INTEXT) - NO SPACES BETWEEN WORDS/LETTERS
+   ## 5-INTEGER-TUPLE-BASED DICTIONARY KEY POSITION OF (BOOK#, CHAPTER#, VERSE#, LETTER#INVERSE, LETTER#INTEXT) - NO SPACES BETWEEN WORDS/LETTERS
    
    ## FIRST SIX LETTERS OF TORAH: GENESIS
    D5[1, 1, 1, 1, 1] --> 'ב'
