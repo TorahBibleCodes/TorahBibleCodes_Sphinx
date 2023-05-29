@@ -443,7 +443,7 @@ The TorahBibleCodes app can be used as a Hebrew Gematria Number calculator for H
    ## PLEASE NOTE BUG IN READ THE DOC'S PRESENTATION OF THE HEBREW UNICODE TEXT STRING WITHIN THIS COMPLEX TUPLE
    
    In [1]: DW4ELS --> {1: ('משיח', (1, [40, 300, 10, 8], 358)),
-                        2: ('המשיח', (2, [5, 40, 300, 10, 8], 363))}
+                       2: ('המשיח', (2, [5, 40, 300, 10, 8], 363))}
    
    In [2]: DW4ELS[1] --> ('משיח', (1, [40, 300, 10, 8], 358)) ## (משיח , (1, [40, 300, 10, 8], 358))
    
