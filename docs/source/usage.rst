@@ -287,7 +287,7 @@ For any letter in the selected text(s), it is this 5th integer that is the prima
 
 Thus if one knows either the letter position *n* via the entire 5-integer tuple-number key/value or simply via the 5th number only, it is possible to retrieve that unique letter object at that position.
 
-Assuming 304850 letters for entire Torah selected::
+**Assuming 304850 letters for entire Torah (or 1197042 letters for the entire Hebrew Bible) selected**::
 
    ## 5-DIGIT-TUPLE-BASED DICTIONARY KEY POSITION OF (BOOK#, CHAPTER#, VERSE#, LETTER#INVERSE, LETTER#INTEXT) - NO SPACES BETWEEN WORDS/LETTERS
    
