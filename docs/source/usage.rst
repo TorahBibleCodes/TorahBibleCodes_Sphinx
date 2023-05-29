@@ -286,7 +286,7 @@ Humans may find it easier to refer to the same letter position *n* by its comple
 
 **Critical Concept:** For any letter in the selected text(s), it is this 5th integer that is the primary key - and unique identifier - by which one identify any one Letter Object ``LO`` (see below). Through this letter position index *n*, one can return (via the ``D5K`` Object) the entire 5-integer tuple-key letter position *n* which can then be used to return that specific Hebrew letter (via the ``D5`` Object).
 
-Thus if one knows either the letter position *n* via the entire 5-integer tuple-number key/value or simply via the 5th number only, it is possible to retrieve that unique letter object at that position.
+**Key Insight:** Thus if one knows either the letter position *n* via the entire 5-integer tuple-number key/value or simply via the 5th number only, it is possible to retrieve any and all data associated with that unique letter object at that unique letter position *n*.
 
 **Assuming 304850 letters for entire Torah selected**::
 
