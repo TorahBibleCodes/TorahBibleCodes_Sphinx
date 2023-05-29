@@ -110,7 +110,7 @@ For example::
 Equidistant Letter Sequences (ELSs)
 ----------------
 
-Witztum, Rips, and Rosenberg (WRR) define an Equidistant Letter Sequence (ELS) as a sequence of letters in the text whose positions - not counting spaces - form an arithmetic progression. That is to say the letters are found at the positions::
+Witztum, Rips, and Rosenberg (WRR 1994) define an Equidistant Letter Sequence (ELS) as a sequence of letters in the text whose positions - not counting spaces - form an arithmetic progression. That is to say the letters are found at the positions::
 
    n, (n + d), (n + 2d), (n + 3d) ..., (n + (k - 1)d)
 
@@ -442,10 +442,24 @@ Custom Class: Letter Object (LO)
 
 ``DLO`` Object - Dictionary of Letter Objects::
 
-Custom Letter Objects (LO)
+For each letter in the selected text(s), instances of a custom Class of Letter Object (LO) are created to bind and contain critical information for that letter, e.g. the unique letter position *n* of that letter object, the Boolean Value of whether that letter is a match in one or more ELSs, etc.
 
-Because of the need to keep track of complex relationships between letter objects, we...
+Each letter object (LO) is stored in a Python Dictionary of Letter Objects ``DLO`` with 1-Based Dictionary Key-Positions::
 
+   ## FIRST SIX LETTERS OF TORAH: GENESIS
+   In [1]: DLO[1].Letter --> 'ב'
+   In [2]: DLO[2].Letter --> 'ר'
+   In [3]: DLO[3].Letter --> 'א'
+   In [4]: DLO[4].Letter --> 'ש'
+   In [5]: DLO[5].Letter --> 'י'
+   In [6]: DLO[6].Letter --> 'ת'
+   
+   ## LAST FIVE LETTERS OF TORAH: DEUTERONOMY
+   In [7]: DLO[304846].Letter --> 'י'
+   In [8]: DLO[304847].Letter --> 'ש'
+   In [9]: DLO[304848].Letter --> 'ר'
+   In [10]: DLO[304849].Letter --> 'א'
+   In [11]: DLO[304850].Letter --> 'ל'
 
 Custom Class: Equidistant Letter Sequence (ELS) Object (ELSO)
 ----------------
