@@ -631,13 +631,18 @@ These Python data objects are subsequently incorporated with a custom Global Sea
 
    gso = GSO()
 
-
-``gso.S``
 ``gso.D``
+``gso.DS``
+``gso.S``
+``gso.L``
+``gso.N``
 ``gso.DS``
 ``gso.DL``
 ``gso.D5``
 ``gso.D5K``
+``gso.DLO``
+``gso.DELSO``
+``gso.DW``
 
 
 
