@@ -499,7 +499,17 @@ Each Letter Object (``LO``) is stored in a Python Dictionary of Letter Objects `
 Custom Class: Equidistant Letter Sequence (ELS) Object (ELSO)
 ----------------
 
+``ELSO`` Object - Equidistant Letter Sequence Object:
+
+For each ELS Search Term that is inputted by the user, an instance of the Custom Class of Equidistant Letter Sequence Object (``ELSO``) is created to bind and contain critical information for that ELS Search Term, e.g.  etc.::
+
+
+
+
+
 ``DELSO`` Object - Dictionary of Equidistant Letter Sequence (ELS) Objects::
+
+
 
 Custom Equidistant Letter Sequence Objects (ELSO)
 
