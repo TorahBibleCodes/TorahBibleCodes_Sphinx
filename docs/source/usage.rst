@@ -543,7 +543,18 @@ Each Equidistant Letter Sequence (ELS) Object (``ELSO``) is stored in a Python D
    ## 8 == ח
    In [9]: len(DELSO[2].ListOfListsOfIndexMatches[4]) --> 7189 ## NUMBER OF MATCHES FOR 5TH LETTER IN 2ND ELS SEARCH TERM
    
+The Central Search Algorithm
+----------------
 
+There are several ways one can implement WRR's Central Search Algorithm (i.e. Formula) in Python.
+
+For our purposes it is most efficient to convert all Hebrew letters to their Gematria Number equivalent, and then search for either the first or last letter in each ELS Search term - or both.
+
+We can search for the first letter (מ/ם) and (ה) for each ELS Search Term, and then search both forwards and backwards for ELS Matches.
+
+**AND/OR:** We can search for the first letter (מ/ם) and (ה) AS WELL AS the last letter (ה) for each ELS Search Term, and search only forwards for ELS Matches.   
+
+Therefore, we can obtain the letter position index numbers *n* of matches for each of these critical letter objects.
 
 Custom Class: Global Search Object (GSO)
 ----------------
