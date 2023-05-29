@@ -16,6 +16,7 @@ To use TorahBibleCodes:
 
    C:\python> pip install ipython
    
+
    3.) DOWNLOAD the TorahBibleCodes GitHub Repo ZIP file or clone the GitHub repo to your local computer: https://github.com/torahbiblecodes/torahbiblecodes
 
 .. code-block:: console
