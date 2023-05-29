@@ -501,9 +501,44 @@ Custom Class: Equidistant Letter Sequence (ELS) Object (ELSO)
 
 ``ELSO`` Object - Equidistant Letter Sequence Object:
 
-For each ELS Search Term that is inputted by the user, an instance of the Custom Class of Equidistant Letter Sequence Object (``ELSO``) is created to bind and contain critical information for that ELS Search Term, e.g.  etc.:
+For each ELS Search Term that is inputted by the user, an instance of the Custom Class of Equidistant Letter Sequence Object (``ELSO``) is created to bind and contain critical information for that ELS Search Term, e.g. Lists of Lists of Index Matches for each letter of each ELS Search Term  etc.::
+
+   ## ELS SEARCH TERM: 'משיח' - 'Mashiach' - 'Messiah'
+   
+   ## DELSO[1] == 'משיח'
+
+   ## 40 == מ / ם
+   len(DELSO[1].ListOfListsOfIndexMatches[0]) --> 25090 ## NUMBER OF MATCHES FOR 1ST LETTER IN 1ST ELS SEARCH TERM
+
+   ## 300 == ש
+   len(DELSO[1].ListOfListsOfIndexMatches[1]) --> 15595 ## NUMBER OF MATCHES FOR 2ND LETTER IN 1ST ELS SEARCH TERM
+        
+   ## 10 == י
+   len(DELSO[1].ListOfListsOfIndexMatches[2]) --> 31556 ## NUMBER OF MATCHES FOR 3RD LETTER IN 1ST ELS SEARCH TERM
+        
+   ## 8 == ח
+   len(DELSO[1].ListOfListsOfIndexMatches[3]) --> 7189 ## NUMBER OF MATCHES FOR 4TH LETTER IN 1ST ELS SEARCH TERM
 
 
+   ## ELS SEARCH TERM: 'המשיח' - 'HaMashiach' - 'The Messiah'
+   ## DELSO[2] == 'המשיח'
+
+   ## 5 == ה
+   len(DELSO[2].ListOfListsOfIndexMatches[0]) --> 28055 ## NUMBER OF MATCHES FOR 2ND LETTER IN 2ND ELS SEARCH TERM
+
+   ## 40 == מ / ם
+   len(DELSO[2].ListOfListsOfIndexMatches[1]) --> 25090 ## NUMBER OF MATCHES FOR 2ND LETTER IN 2ND ELS SEARCH TERM
+
+   ## 300 == ש
+   len(DELSO[2].ListOfListsOfIndexMatches[2]) --> 15595 ## NUMBER OF MATCHES FOR 3RD LETTER IN 2ND ELS SEARCH TERM
+        
+   ## 10 == י
+   len(DELSO[2].ListOfListsOfIndexMatches[3]) --> 31556 ## NUMBER OF MATCHES FOR 4TH LETTER IN 2ND ELS SEARCH TERM
+        
+   ## 8 == ח
+   len(DELSO[2].ListOfListsOfIndexMatches[4]) --> 7189 ## NUMBER OF MATCHES FOR 5TH LETTER IN 2ND ELS SEARCH TERM
+   
+   
 
 ``DELSO`` Object - Dictionary of Equidistant Letter Sequence (ELS) Objects:
 
