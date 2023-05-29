@@ -385,7 +385,7 @@ Each letter's Hebrew Kabbalah Numerical Gematria Value is obtainable by passing 
 
 **NOTE:** 
 
-In previous, older versions of Python, Hebrew letters stored in Python memory as the ``L`` Object were right-to-left (R-T-L); However, in development version of Python 3.9+, these same Hebrew letters returned are left-to-right (L-T-R); Therefore now the Hebrew letter order is consistent with all other orders in sequences of Strings, Lists, and Tuples, i.e. left-to-right L-T-R. Numbers returned in the ``N`` Object are left-to-right L-T-R; 
+In previous, older versions of Python, Hebrew letters stored in Python memory as the ``L`` Object were right-to-left (R-T-L); However, in development version of Python 3.9+, these same Hebrew letters returned are left-to-right (L-T-R); However, in our version of ``ipython``, they are presented in the UI as R-T-L as shown here; Thus in current versions of Python, the Hebrew letter order is consistent with all other orders in sequences of Strings, Lists, and Tuples, i.e. left-to-right L-T-R. Numbers returned in the ``N`` Object are left-to-right L-T-R, and although they are presented as R-T-L here, they are stored in Python memory as L-T-R.
 
 ``N`` Object - List of Gematria Number Values::
 
