@@ -158,7 +158,9 @@ The ``DS`` Dictionary Object may be useful for the interactive user-developer to
 
 Each verse (and letter) of the thirty-nine (39) books of the Hebrew Bible is accessible via the Python dictionaries ``D`` and ``DS`` with a unique 3-digit Tuple Key as per following examples:
 
-``D`` Object - Dictionary of Verses (with No Spaces), accessible as data with a 3-digit Tuple Key::
+``D`` Object - Dictionary of Verses (with No Spaces), accessible as data with a 3-digit Tuple Key
+
+**Assuming 304850 letters for entire Torah selected**::
 
    ## 3-INTEGER-TUPLE-BASED DICTIONARY KEY POSITION OF (BOOK#, CHAPTER#, VERSE#) - NO SPACES BETWEEN WORDS/LETTERS
    
@@ -190,7 +192,9 @@ Each verse (and letter) of the thirty-nine (39) books of the Hebrew Bible is acc
    D[5,1,1] == 'אלההדבריםאשרדברמשהאלכלישראלבעברהירדןבמדברבערבהמולסוףביןפארןוביןתפלולבןוחצרתודיזהב'
    D[5,34,12] == 'ולכלהידהחזקהולכלהמוראהגדולאשרעשהמשהלעיניכלישראל'
    
-``DS`` Object - Dictionary of Verses (with Spaces), accessible as data with a 3-digit Tuple Key::
+``DS`` Object - Dictionary of Verses (with Spaces), accessible as data with a 3-digit Tuple Key
+
+**Assuming 304850 letters for entire Torah selected**::
 
    ## 3-INTEGER-TUPLE-BASED DICTIONARY KEY POSITION OF (BOOK#, CHAPTER#, VERSE#) - WITH SPACES BETWEEN WORDS/LETTERS
    
@@ -222,7 +226,9 @@ Each verse (and letter) of the thirty-nine (39) books of the Hebrew Bible is acc
    DS[5,1,1] == 'אלה הדברים אשר דבר משה אל כל ישראל בעבר הירדן במדבר בערבה מול סוף בין פארן ובין תפל ולבן וחצרת ודי זהב'
    DS[5,34,12] == 'ולכל היד החזקה ולכל המורא הגדול אשר עשה משה לעיני כל ישראל'
    
-``D`` Object - Dictionary of Verses/Letters, accessible as data with a 3-digit Tuple Key + sub-element (0-indexed) in sequence of letters within each verse::
+``D`` Object - Dictionary of Verses/Letters, accessible as data with a 3-digit Tuple Key + sub-element (0-indexed) in sequence of letters within each verse
+
+**Assuming 304850 letters for entire Torah selected**::
 
    ## 3-INTEGER-TUPLE-BASED DICTIONARY KEY POSITION OF (BOOK#, CHAPTER#, VERSE#) - NO SPACES BETWEEN WORDS/LETTERS
    ## FOR EACH VERSE: THERE IS NATIVE PYTHON 0-BASED INDEX LIST OF LETTERS IN EACH VERSE
@@ -242,7 +248,9 @@ Data Objects (and derivative Data Objects)
 
 From the ``D`` and ``DS`` Objects, all other Python Data Objects are derived:
 
-``DL`` Object - Dictionary of Letters (with 4-integer tuple-key) with 4th element of tuple being the (non-0-indexed; 1-indexed) position of letter in verse::
+``DL`` Object - Dictionary of Letters (with 4-integer tuple-key) with 4th element of tuple being the (non-0-indexed; 1-indexed) position of letter in verse
+
+**Assuming 304850 letters for entire Torah selected**::
 
    ## 4-INTEGER-TUPLE-BASED DICTIONARY KEY POSITION OF (BOOK#, CHAPTER#, VERSE#, LETTER#INVERSE) - NO SPACES BETWEEN WORDS/LETTERS
    
