@@ -572,8 +572,6 @@ Therefore, we can obtain the letter position index numbers *n* of matches for ea
    In [10]: DELSO[1].ListOfListsOfIndexMatches[0][9] --> 90
    
    ## LAST TEN (10) INDEX POSITION MATCHES (n) FOR EACH MATCH IN SELECTED TEXT FOR 1ST LETTER IN 1ST ELS TERM
-   
-   In []: DELSO[1].ListOfListsOfIndexMatches[0][] --> 
    In []: DELSO[1].ListOfListsOfIndexMatches[0][25080] --> 304702
    In []: DELSO[1].ListOfListsOfIndexMatches[0][25081] --> 304717
    In []: DELSO[1].ListOfListsOfIndexMatches[0][25082] --> 304734
