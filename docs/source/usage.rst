@@ -16,7 +16,7 @@ To use TorahBibleCodes:
 
    C:\python> pip install ipython
    
-3.) DOWNLOAD the TorahBibleCodes GitHub Repo ZIP file or clone the GitHub repo to your local computer.
+3.) DOWNLOAD the TorahBibleCodes GitHub Repo ZIP file or clone the GitHub repo to your local computer: https://github.com/torahbiblecodes/torahbiblecodes
 
 .. code-block:: console
 
@@ -118,9 +118,9 @@ WRR define *n* as the start, *d* as the skip between letters in the search-term,
 
 For example::
 
-   ELS1 = “משיח” == “Mashiach” == “Messiah”
+   ELS1 = 'משיח' == 'Mashiach' == 'Messiah'
 
-   ELS2 = “המשיח” == “HaMashiach” == “The Messiah”
+   ELS2 = 'המשיח' == 'HaMashiach' == 'The Messiah'
 
 *k* = length of an ELS Search-Term, ELS, i.e. the number of letters in the word; here:
 
@@ -135,7 +135,7 @@ number *n* is the index position number(s) for each instance found (i.e. for eac
 instance of these letters Mem (מ/ם) found, there is the potential to find multiple ELSs beginning (or
 ending) on that letter.
 
-Because the letter Mem (מ) is one of the five Hebrew letters with an alternate form if coming as the final letter (ם) of a word, the central algorithm efficiently handles this eventuality of ELS Searches: instead of search for either ("regular letter form or final letter form") of the two possible letter formats, it is more useful for extrapolated permutations of useful functionalities of this program to convert all Hebrew letters to their equivalent Hebrew Gematria Numerical values and then search for these integer numbers. Later, when presenting the results to the user in visual format, we simply reference the Custom Class (Letter Object)'s ``.Letter`` property. 
+Because the letter Mem (מ) is one of the five Hebrew letters with an alternate form if coming as the final letter (ם) of a word, the central algorithm efficiently handles this eventuality of ELS Searches: instead of search for either ("regular letter form or final letter form") of the two possible letter formats, it is more efficient to convert all Hebrew letters to their equivalent Hebrew Gematria Numerical values and then search for these integer numbers. 
 
 *d* = equidistant skip distance(s) between each letter in the ELS successfully found within the
 selected text that is searched (i.e. for each *n*); For each instance of a letter found at index number position *n*, there may
@@ -154,7 +154,7 @@ For any text chosen (e.g. Genesis, Exodus, Leviticus, Numbers, Deuteronomy, or a
 
 After choosing the text(s) to be searched, a Python dictionary ``D`` (with no spaces) and ``DS`` (with spaces) are created to contain each verse - accessible by 3-digit Tuple Key.
 
-The ``DS`` Dictionary Object may be useful for the interactive user-developer to access the specific verses with the words readable with spaces; The ``D`` Dictionary Object will be more useful to a computer. 
+The ``DS`` Dictionary Object may be useful for the interactive user-developer to access the specific verses with the words readable with spaces; The ``D`` Dictionary Object will be more useful to a computer - but these two Python Dictionary Objects contain the same text(s).
 
 Each verse (and letter) of the thirty-nine (39) books of the Hebrew Bible is accessible via the Python dictionaries ``D`` and ``DS`` with a unique 3-digit Tuple Key as per following examples:
 
@@ -277,11 +277,11 @@ For example:
 The 5-Integer Tuple-Key / Tuple-Value
 ----------------
 
-It is this 5th number of this 5-integer tuple-key of the ``D5`` Object (as well as the 5-integer tuple-value of the ``D5K`` Object that serves as the primary key - and thus the unique identifier - for every letter object in the selected text(s).
+It is this 5th number of this 5-integer tuple-key of the ``D5`` Object (as well as the 5-integer tuple-value of the ``D5K`` Object) that serves as the primary key - and thus the unique identifier - for every letter object in the selected text(s).
 
 It is this 5th integer by which the program will uniquely identify each letter position *n* in the selected text(s).
 
-Humans will find it easier to refer to the same letter position *n* by its complete 5-integer tuple-key that allows quick reference to the Book#, Chapter#, Verse#, Letter#InVerse, and Letter#InText.
+Humans may find it easier to refer to the same letter position *n* by its complete 5-integer tuple-key that allows quick reference to the Book#, Chapter#, Verse#, Letter#InVerse, and Letter#InText.
 
 For any letter in the selected text(s), it is this 5th integer by which one can return (via the ``D5K`` Object) the entire 5-integer tuple-key letter position *n* which can then be used to return that specific Hebrew letter (via the ``D5`` Object).
 
@@ -385,7 +385,7 @@ Each letter's Hebrew Kabbalah Numerical Gematria Value is obtainable by passing 
 
 **NOTE:** 
 
-In previous, older versions of Python, Hebrew letters returned in ``L`` Object were right-to-left (R-T-L); However, in development version of Python 3.9+, these same Hebrew letters returned are left-to-right (L-T-R), so now the Hebrew letter order is consistent with all other orders in sequences Python Lists: (L-T-R). Numbers returned in the ``N`` Object are left-to-right (L-T-R); 
+In previous, older versions of Python, Hebrew letters stored in Python memory as the ``L`` Object were right-to-left (R-T-L); However, in development version of Python 3.9+, these same Hebrew letters returned are left-to-right (L-T-R); Therefore now the Hebrew letter order is consistent with all other orders in sequences of Strings, Lists, and Tuples, i.e. left-to-right L-T-R. Numbers returned in the ``N`` Object are left-to-right L-T-R; 
 
 ``N`` Object - List of Gematria Number Values::
 
@@ -411,8 +411,8 @@ In previous, older versions of Python, Hebrew letters returned in ``L`` Object w
    
    ## 1-BASED DICTIONARY KEY-POSITIONS
    
-   ## QUIRK IN IPYTHON PRESENTING UNICODE HEBREW TEXT WITHIN COMPLEX TUPLE OF NUMBERS
-   ## LEFT-TO-RIGHT ORDER
+   ## QUIRK IN READ THE DOCS PRESENTING UNICODE HEBREW TEXT WITHIN COMPLEX TUPLE OF NUMBERS
+   ## LEFT-TO-RIGHT ORDER WOULD LOOK LIKE THIS:
    In [1]: DW[1] --> ('HebrewWord' , [1, 2, 3, 4, 5, 6], (1, [2, 200, 1, 300, 10, 400], 913))
    
    ## ERROR WITH PRESENTING UNICODE HEBREW TEXT WITHIN COMPLEX TUPLE OF NUMBERS)
@@ -420,6 +420,8 @@ In previous, older versions of Python, Hebrew letters returned in ``L`` Object w
    --> ('בראשית' , [1, 2, 3, 4, 5, 6], (1, [2, 200, 1, 300, 10, 400], 913))
    
    ## THUS THE NEED TO PRESENT THIS INFO WITHOUT QUOTES TO PRESERVE THE ORDER
+   ## YET THIS RIGHT-TO-LEFT (RTL) TUPLE IS ACTUALLY STORED IN PYTHON MEMORY
+   ## AS LEFT-TO-RIGHT.
    --> (בראשית , [1, 2, 3, 4, 5, 6], (1, [2, 200, 1, 300, 10, 400], 913))
       
    In [2]: DW[2] --> (ברא , [7, 8, 9], (2, [2, 200, 1], 203))
