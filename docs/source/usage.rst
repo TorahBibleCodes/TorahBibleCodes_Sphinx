@@ -510,7 +510,7 @@ Each Equidistant Letter Sequence (ELS) Object (``ELSO``) is stored in a Python D
 **Assuming 304850 letters for entire Torah selected**::
 
    ## ELS SEARCH TERM: 'משיח' - 'Mashiach' - 'Messiah'
-   ## DELSO[1] == 'משיח'
+   ## DELSO[1] ~ 'משיח'
 
    ## 40 == מ / ם
    In [1]: len(DELSO[1].ListOfListsOfIndexMatches[0]) --> 25090 ## NUMBER OF MATCHES FOR 1ST LETTER IN 1ST ELS SEARCH TERM
@@ -526,7 +526,7 @@ Each Equidistant Letter Sequence (ELS) Object (``ELSO``) is stored in a Python D
 
 
    ## ELS SEARCH TERM: 'המשיח' - 'HaMashiach' - 'The Messiah'
-   ## DELSO[2] == 'המשיח'
+   ## DELSO[2] ~ 'המשיח'
 
    ## 5 == ה
    In [5]: len(DELSO[2].ListOfListsOfIndexMatches[0]) --> 28055 ## NUMBER OF MATCHES FOR 1ST LETTER IN 2ND ELS SEARCH TERM
@@ -588,6 +588,12 @@ Therefore, we can obtain the letter position index numbers *n* of matches for ea
 **Test Driven Development**:
 
 Let's test the both the first and last results that will be easily confirmable by a human::
+
+   ## ELS SEARCH TERM: 'משיח' - 'Mashiach' - 'Messiah'
+   ## DELSO[1] ~ 'משיח'
+
+   ## 40 == מ / ם
+   In [1]: len(DELSO[1].ListOfListsOfIndexMatches[0]) --> 25090 ## NUMBER OF MATCHES FOR 1ST LETTER IN 1ST ELS SEARCH TERM
 
    ## TEST-DRIVEN DEVELOPMENT: TEST RESULTS FOR FIRST INSTANCE OF LETTER POSITION MATCH (n)
    In [1]: DELSO[1].ListOfListsOfIndexMatches[0][0] --> 14
