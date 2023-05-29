@@ -524,7 +524,7 @@ For each ELS Search Term that is inputted by the user, an instance of the Custom
    ## DELSO[2] == 'המשיח'
 
    ## 5 == ה
-   len(DELSO[2].ListOfListsOfIndexMatches[0]) --> 28055 ## NUMBER OF MATCHES FOR 2ND LETTER IN 2ND ELS SEARCH TERM
+   len(DELSO[2].ListOfListsOfIndexMatches[0]) --> 28055 ## NUMBER OF MATCHES FOR 1ST LETTER IN 2ND ELS SEARCH TERM
 
    ## 40 == מ / ם
    len(DELSO[2].ListOfListsOfIndexMatches[1]) --> 25090 ## NUMBER OF MATCHES FOR 2ND LETTER IN 2ND ELS SEARCH TERM
