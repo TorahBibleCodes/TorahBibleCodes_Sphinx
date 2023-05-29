@@ -150,7 +150,7 @@ The essential objects in TorahBibleCodes are native Python data objects (i.e. st
 
 The source texts are digitized versions of the Leningrad Codex provided by https://Sefaria.org. 
 
-For any text chosen (e.g. Genesis, Exodus, Leviticus, Numbers, Deuteronomy, or all five (5) books of the Torah together, or all twenty-one (21) books of the Prophets, or all thirteen (13) books of the Writings, or all thirty-nine (39) books of the entire Hebrew Bible), the text is parsed and Python dictionary objects ``D`` and ``DS`` are created that allow one to access each verse by 3-digit Tuple Key (Book, Chapter, Verse).
+For any text chosen (e.g. Genesis, Exodus, Leviticus, Numbers, Deuteronomy, or all five (5) books of the Torah together, or all twenty-one (21) books of the Prophets, or all thirteen (13) books of the Writings, or all (or any of) thirty-nine (39) books of the entire Hebrew Bible), the text is parsed and Python dictionary objects ``D`` and ``DS`` are created that allow one to access each verse by 3-digit Tuple Key (Book, Chapter, Verse).
 
 After choosing the text(s) to be searched, a Python dictionary ``D`` (with no spaces) and ``DS`` (with spaces) are created to contain each verse - accessible by 3-digit Tuple Key.
 
@@ -283,7 +283,7 @@ It is this 5th integer by which we will uniquely identify each letter position *
 
 Humans may find it easier to refer to the same letter position *n* by its complete 5-integer tuple-key that allows quick reference to the Book#, Chapter#, Verse#, Letter#InVerse, and Letter#InText.
 
-For any letter in the selected text(s), it is this 5th integer by which one can return (via the ``D5K`` Object) the entire 5-integer tuple-key letter position *n* which can then be used to return that specific Hebrew letter (via the ``D5`` Object).
+For any letter in the selected text(s), it is this 5th integer that is the primary key - and unique identifier - by which one can return (via the ``D5K`` Object) the entire 5-integer tuple-key letter position *n* which can then be used to return that specific Hebrew letter (via the ``D5`` Object).
 
 Thus if one knows either the letter position *n* via the entire 5-integer tuple-number key/value or simply via the 5th number only, it is possible to retrieve that unique letter object at that position.
 
