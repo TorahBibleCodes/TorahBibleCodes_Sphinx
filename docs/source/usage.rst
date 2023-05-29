@@ -8,15 +8,15 @@ Installation
 
 To use TorahBibleCodes:
 
-1.) DOWNLOAD and INSTALL PYTHON on your local computer: https://www.python.org/downloads/
+   1.) DOWNLOAD and INSTALL PYTHON on your local computer: https://www.python.org/downloads/
 
-2.) In the folder where Python has been installed, Open a Command Line Interface (CLI) such as Windows PowerShell or the equivalent on other Apple and Linux devices, and then INSTALL ``ipython`` interactive python (IPython) development environment via ``pip install`` at the command prompt.
+   2.) In the folder where Python has been installed, Open a Command Line Interface (CLI) such as Windows PowerShell or the equivalent on other Apple and Linux devices, and then INSTALL ``ipython`` interactive python (IPython) development environment via ``pip install`` at the command prompt.
 
 .. code-block:: console
 
    C:\python> pip install ipython
    
-3.) DOWNLOAD the TorahBibleCodes GitHub Repo ZIP file or clone the GitHub repo to your local computer: https://github.com/torahbiblecodes/torahbiblecodes
+   3.) DOWNLOAD the TorahBibleCodes GitHub Repo ZIP file or clone the GitHub repo to your local computer: https://github.com/torahbiblecodes/torahbiblecodes
 
 .. code-block:: console
 
@@ -38,15 +38,15 @@ Run the App
 
 After installing Python, ``ipython``, as well as cloning the TorahBibleCodes GitHub Repo to your local computer:
 
-1.) Navigate to the local folder to where you have cloned TorahBibleCodes.
+   1.) Navigate to the local folder to where you have cloned TorahBibleCodes.
 
-2.) Open a Command Line Interface (CLI) such as Windows PowerShell or the equivalent on other Apple and Linux devices.
+   2.) Open a Command Line Interface (CLI) such as Windows PowerShell or the equivalent on other Apple and Linux devices.
 
-3.) Activate your ``ipython`` interactive python (IPython) development environment by typing ``ipython`` at your CLI prompt.
+   3.) Activate your ``ipython`` interactive python (IPython) development environment by typing ``ipython`` at your CLI prompt.
 
 After your ``ipython`` interactive python (IPython) development environment has been activated in the CLI Window:
 
-4.) Type ``%run p.py`` at the ``ipython`` (IPython) command prompt.
+   4.) Type ``%run p.py`` at the ``ipython`` (IPython) command prompt.
 
 You will be prompted to select a text from the Hebrew Bible via the :py:func:`fn_GetUserInput` function.
 
@@ -124,18 +124,18 @@ For example::
 
 *k* = length of an ELS Search-Term, ELS, i.e. the number of letters in the word; here:
 
-1.) The length *k* of ELS1 is 4.
+   1.) The length *k* of ELS1 is 4.
 
-2.) The length *k* of ELS2 is 5.
+   2.) The length *k* of ELS2 is 5.
 
 *n* = index number starting position for each instance for each first (or last) letter in the ELS;
 
-   For example, if you are searching for a word that begins (or ends) with the letter Mem (מ/ם) in the text (e.g. משיח), index
+For example, if you are searching for a word that begins (or ends) with the letter Mem (מ/ם) in the text (e.g. משיח), index
 number *n* is the index position number(s) for each instance found (i.e. for each *n*) of the letter Mem (מ/ם), and for each
 instance of these letters Mem (מ/ם) found, there is the potential to find multiple ELSs beginning (or
 ending) on that letter.
 
-   Because the letter Mem (מ) is one of the five Hebrew letters with an alternate form if coming as the final letter (ם) of a word, the central algorithm efficiently handles this eventuality of ELS Searches: instead of search for either ("regular letter form or final letter form") of the two possible letter formats, it is more efficient to convert all Hebrew letters to their equivalent Hebrew Gematria Numerical values and then search for these integer numbers. 
+Because the letter Mem (מ) is one of the five Hebrew letters with an alternate form if coming as the final letter (ם) of a word, the central algorithm efficiently handles this eventuality of ELS Searches: instead of search for either ("regular letter form or final letter form") of the two possible letter formats, it is more efficient to convert all Hebrew letters to their equivalent Hebrew Gematria Numerical values and then search for these integer numbers. 
 
 *d* = equidistant skip distance(s) between each letter in the ELS successfully found within the
 selected text that is searched (i.e. for each *n*); For each instance of a letter found at index number position *n*, there may
