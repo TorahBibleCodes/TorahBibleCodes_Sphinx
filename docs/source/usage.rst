@@ -550,11 +550,11 @@ There are several ways one can implement WRR's Central Search Algorithm (i.e. Fo
 
 For our purposes it is most efficient to convert all Hebrew letters to their Gematria Number equivalent, and then search for either the first or last letter in each ELS Search term - or both.
 
-We can search for the first letter Mem (מ/ם) and Hey (ה) for each ELS Search Term, and then search both forwards (+) and backwards (-) for ELS Matches, i.e. doing two (2) searches: 1.) From the first letter searching forwards (+); 2.) From the first letter searching backwards (-).
+We can search for the first letter Mem (מ/ם) for ELS Search Term #1 and Hey (ה) for each ELS Search Term #2, and then search both forwards (+) and backwards (-) in the selected text(s) for ELS Matches, i.e. doing two (2) searches for each ELS Search Term: 1.) From the first letter searching forwards (+); 2.) From the first letter searching backwards (-).
 
-**AND/OR:** We can search for the first letter Mem (מ/ם) and Hey (ה) AS WELL AS the last letter Het (ח) for each ELS Search Term, and search only forwards for ELS Matches, i.e. doing two (2) searches: 1.) From the first letter searching forwards (+) only; 2.) From the last letter search forwards (+) only.   
+**AND/OR:** We can search for the first letter Mem (מ/ם) and Hey (ה) AS WELL AS the last letter Het (ח) for each ELS Search Term, and search only forwards for ELS Matches, i.e. doing two (2) searches for each ELS Search Term: 1.) From the first letter searching forwards (+) only; 2.) From the last letter search forwards (+) only.   
 
-Therefore, we can obtain the letter position index numbers *n* of matches for each of these critical first and last letter objects for each ELS Search Term:
+Therefore, we can obtain the letter position index numbers *n* of matches for each of these critical first and/or last letter objects for each ELS Search Term:
 
 **Assuming 304850 letters for entire Torah selected**::
 
