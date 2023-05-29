@@ -440,14 +440,15 @@ In previous, older versions of Python, Hebrew letters stored in Python memory as
 
 The TorahBibleCodes app can be used as a Hebrew Gematria Number calculator for Hebrew words (i.e. ELSs) that you wish to search for::
 
+   ## PLEASE NOTE BUG IN READ THE DOC'S PRESENTATION OF THE HEBREW UNICODE TEXT STRING WITHIN THIS COMPLEX TUPLE
    In [1]: DW4ELS --> {1: ('משיח', (1, [40, 300, 10, 8], 358)),
- 2: ('המשיח', (2, [5, 40, 300, 10, 8], 363))}
+                        2: ('המשיח', (2, [5, 40, 300, 10, 8], 363))}
    
    "\\'בראשית\\'"
    
-   In [2]: DW4ELS[1] --> ('המשיח', (2, [5, 40, 300, 10, 8], 363))
+   In [2]: DW4ELS[1] --> ('משיח', (1, [40, 300, 10, 8], 358)) ## (משיח , (1, [40, 300, 10, 8], 358))
    
-   In [3]: DW4ELS[2] --> ('המשיח', (2, [5, 40, 300, 10, 8], 363))
+   In [3]: DW4ELS[2] --> ('המשיח', (2, [5, 40, 300, 10, 8], 363)) ## (המשיח , (2, [5, 40, 300, 10, 8], 363))
    
 
 
