@@ -694,17 +694,7 @@ Since we have all the letter position index numbers *n* for each letter in every
    ## ELS SEARCH TERM: 'משיח' - 'Mashiach' - 'Messiah'
    ## DELSO[1] ~ 'משיח'
    
-   ## 40 == מ / ם
-   In [1]: len(DELSO[1].ListOfListsOfIndexMatches[0]) --> 25090 ## NUMBER OF MATCHES FOR 1ST LETTER IN 1ST ELS SEARCH TERM
-   
-   ## FIRST TEN (10) INDEX POSITION MATCHES (n) FOR EACH MATCH IN SELECTED TEXT FOR 1ST LETTER IN 1ST ELS TERM
-   In [1]: DELSO[1].ListOfListsOfIndexMatches[0][0] --> 14
-   In [2]: DELSO[1].ListOfListsOfIndexMatches[0][1] --> 19
-   In [3]: DELSO[1].ListOfListsOfIndexMatches[0][2] --> 21
-   In [4]: DELSO[1].ListOfListsOfIndexMatches[0][3] --> 57
-   In [5]: DELSO[1].ListOfListsOfIndexMatches[0][4] --> 66
-   In [6]: DELSO[1].ListOfListsOfIndexMatches[0][5] --> 67
-   
+
    
 Custom Class: Global Search Object (GSO)
 ----------------
