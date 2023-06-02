@@ -635,6 +635,68 @@ Let's test the both the first and last results that will be easily confirmable b
    In [9]: DLO[304836].WordNumber --> 79979
    In [10]: DW[79979] --> ('משה', [304836, 304837, 304838], (79979, [40, 300, 5], 345)) ## (משה , [304836, 304837, 304838], (79979, [40, 300, 5], 345))
 
+Since we have all the letter position index numbers *n* for each letter in every ELS Search Term, we do not need to search the entire selected text for matches; we simply need to use the numbers that we already have.
+
+**Assuming 304850 letters for entire Torah selected**::
+
+   ## ELS SEARCH TERM: 'משיח' - 'Mashiach' - 'Messiah'
+   ## DELSO[1] ~ 'משיח'
+   
+   ## 40 == מ / ם
+   In [1]: len(DELSO[1].ListOfListsOfIndexMatches[0]) --> 25090 ## NUMBER OF MATCHES FOR 1ST LETTER IN 1ST ELS SEARCH TERM
+   
+   ## FIRST SIX (6) INDEX POSITION MATCHES (n) FOR EACH MATCH IN SELECTED TEXT FOR 1ST LETTER IN 1ST ELS TERM
+   In [1]: DELSO[1].ListOfListsOfIndexMatches[0][0] --> 14
+   In [2]: DELSO[1].ListOfListsOfIndexMatches[0][1] --> 19
+   In [3]: DELSO[1].ListOfListsOfIndexMatches[0][2] --> 21
+   In [4]: DELSO[1].ListOfListsOfIndexMatches[0][3] --> 57
+   In [5]: DELSO[1].ListOfListsOfIndexMatches[0][4] --> 66
+   In [6]: DELSO[1].ListOfListsOfIndexMatches[0][5] --> 67
+   
+   ## FIRST SIX (6) INDEX POSITION MATCHES (n) FOR EACH MATCH IN SELECTED TEXT FOR 2ND LETTER IN 1ST ELS TERM
+   In [1]: DELSO[1].ListOfListsOfIndexMatches[1][0] --> 
+   In [2]: DELSO[1].ListOfListsOfIndexMatches[1][1] --> 
+   In [3]: DELSO[1].ListOfListsOfIndexMatches[1][2] --> 
+   In [4]: DELSO[1].ListOfListsOfIndexMatches[1][3] --> 
+   In [5]: DELSO[1].ListOfListsOfIndexMatches[1][4] --> 
+   In [6]: DELSO[1].ListOfListsOfIndexMatches[1][5] --> 
+   
+   ## FIRST SIX (6) INDEX POSITION MATCHES (n) FOR EACH MATCH IN SELECTED TEXT FOR 3RD LETTER IN 1ST ELS TERM
+   In [1]: DELSO[1].ListOfListsOfIndexMatches[2][0] --> 
+   In [2]: DELSO[1].ListOfListsOfIndexMatches[2][1] --> 
+   In [3]: DELSO[1].ListOfListsOfIndexMatches[2][2] --> 
+   In [4]: DELSO[1].ListOfListsOfIndexMatches[2][3] --> 
+   In [5]: DELSO[1].ListOfListsOfIndexMatches[2][4] --> 
+   In [6]: DELSO[1].ListOfListsOfIndexMatches[2][5] --> 
+   
+   ## FIRST SIX (6) INDEX POSITION MATCHES (n) FOR EACH MATCH IN SELECTED TEXT FOR 4TH LETTER IN 1ST ELS TERM
+   In [1]: DELSO[1].ListOfListsOfIndexMatches[3][0] --> 
+   In [2]: DELSO[1].ListOfListsOfIndexMatches[3][1] --> 
+   In [3]: DELSO[1].ListOfListsOfIndexMatches[3][2] --> 
+   In [4]: DELSO[1].ListOfListsOfIndexMatches[3][3] --> 
+   In [5]: DELSO[1].ListOfListsOfIndexMatches[3][4] --> 
+   In [6]: DELSO[1].ListOfListsOfIndexMatches[3][5] --> 
+   
+   
+   
+
+**Assuming 304850 letters for entire Torah selected**::
+
+   ## ELS SEARCH TERM: 'משיח' - 'Mashiach' - 'Messiah'
+   ## DELSO[1] ~ 'משיח'
+   
+   ## 40 == מ / ם
+   In [1]: len(DELSO[1].ListOfListsOfIndexMatches[0]) --> 25090 ## NUMBER OF MATCHES FOR 1ST LETTER IN 1ST ELS SEARCH TERM
+   
+   ## FIRST TEN (10) INDEX POSITION MATCHES (n) FOR EACH MATCH IN SELECTED TEXT FOR 1ST LETTER IN 1ST ELS TERM
+   In [1]: DELSO[1].ListOfListsOfIndexMatches[0][0] --> 14
+   In [2]: DELSO[1].ListOfListsOfIndexMatches[0][1] --> 19
+   In [3]: DELSO[1].ListOfListsOfIndexMatches[0][2] --> 21
+   In [4]: DELSO[1].ListOfListsOfIndexMatches[0][3] --> 57
+   In [5]: DELSO[1].ListOfListsOfIndexMatches[0][4] --> 66
+   In [6]: DELSO[1].ListOfListsOfIndexMatches[0][5] --> 67
+   
+   
 Custom Class: Global Search Object (GSO)
 ----------------
 
