@@ -508,7 +508,9 @@ Custom Class: Equidistant Letter Sequence (ELS) Object (ELSO)
 
 ``ELSO`` Object - Equidistant Letter Sequence (ELS) Object:
 
-For each ELS Search Term that is inputted by the user, an instance of the Custom Class of Equidistant Letter Sequence (ELS) Object (``ELSO``) is created to bind and contain critical information for that ELS Search Term, e.g. Letters (i.e. Gematria Number Values) for that ELS Search Term, the length *k* of that ELS Search Term, Maximum Possible Skip Distance (defined by Haralick [CITE CITATION]), Lists of Lists of Index Matches for each letter of each ELS Search Term::
+For each ELS Search Term that is inputted by the user, an instance of the Custom Class of Equidistant Letter Sequence (ELS) Object (``ELSO``) is created to bind and contain critical information for that ELS Search Term, e.g. Letters (i.e. Gematria Number Values) for that ELS Search Term, the length *k* of that ELS Search Term, Maximum Possible Skip Distance (defined by Haralick [CITE CITATION]), Lists of Lists of Index Matches for each letter of each ELS Search Term.
+
+**Assuming 304850 letters for entire Torah selected**::
 
    ## ELS SEARCH TERM: 'משיח' - 'Mashiach' - 'Messiah'
    ## DELSO[1] ~ 'משיח' ## DICTIONARY OF ELSO OBJECTS [ELEMENT #1]
