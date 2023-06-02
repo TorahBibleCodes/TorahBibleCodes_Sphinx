@@ -131,15 +131,14 @@ For example::
 *n* = index number starting position for each instance for each first (or last) letter in the ELS;
 
 For example, if you are searching for a word that begins (or ends) with the letter Mem (מ/ם) in the text (e.g. משיח), index
-number *n* is the index position number(s) for each instance found (i.e. for each *n*) of the letter Mem (מ/ם), and for each
+number *n* is the letter position index number(s) for each instance found (i.e. for each letter position index *n*) of the letter Mem (מ/ם), and for each
 instance of these letters Mem (מ/ם) found, there is the potential to find multiple ELSs beginning (or
-ending) on that letter.
+ending) on that letter via multiple instance of *d* (see below).
 
-Because the letter Mem (מ) is one of the five Hebrew letters with an alternate form if coming as the final letter (ם) of a word, the central algorithm efficiently handles this eventuality of ELS Searches: instead of search for either ("regular letter form or final letter form") of the two possible letter formats, it is more efficient to convert all Hebrew letters to their equivalent Hebrew Gematria Numerical values and then search for these integer numbers. 
+Because the letter Mem (מ) is one of the five Hebrew letters with an alternate form if coming as the final letter (ם) of a word, the central algorithm efficiently handles this eventuality of ELS Searches: instead of search for either ("regular letter form or final letter form") of the two possible letter formats, it is more efficient to convert all Hebrew letters to their equivalent Hebrew Gematria Number values and then search for these integer numbers. 
 
 *d* = equidistant skip distance(s) between each letter in the ELS successfully found within the
-selected text that is searched (i.e. for each *n*); For each instance of a letter found at index number position *n*, there may
-potentially be multiple instances of skip distances *d* possible to the next letter(s) in that ELS.
+selected text that is searched (i.e. for each letter position index number *n*); For each instance of a letter found at letter position index number *n*, there may potentially be multiple instances of skip distances *d* possible to the next letter(s) in that ELS.
 
 
 
