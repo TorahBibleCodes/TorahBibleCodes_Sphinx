@@ -635,7 +635,9 @@ Let's test the both the first and last results that will be easily confirmable b
    In [9]: DLO[304836].WordNumber --> 79979
    In [10]: DW[79979] --> ('משה', [304836, 304837, 304838], (79979, [40, 300, 5], 345)) ## (משה , [304836, 304837, 304838], (79979, [40, 300, 5], 345))
 
-Since we have all the letter position index numbers *n* for each letter in every ELS Search Term, we do not need to search the entire selected text for matches; we simply need to use the numbers that we already have.
+**Simplifying the Search Algorithm**:
+
+Since we have all the letter position index numbers *n* for each letter in every ELS Search Term, we do not need to search each letter in the entire selected text for matches; we simply need to use the numbers of the index positions that we already have for only those letters of the ELS Search Term(s): 
 
 **Assuming 304850 letters for entire Torah selected**::
 
