@@ -653,29 +653,38 @@ Since we have all the letter position index numbers *n* for each letter in every
    In [5]: DELSO[1].ListOfListsOfIndexMatches[0][4] --> 66
    In [6]: DELSO[1].ListOfListsOfIndexMatches[0][5] --> 67
    
+   ## 300 == ש
+   In [2]: len(DELSO[1].ListOfListsOfIndexMatches[1]) --> 15595 ## NUMBER OF MATCHES FOR 2ND LETTER IN 1ST ELS SEARCH TERM
+   
    ## FIRST SIX (6) INDEX POSITION MATCHES (n) FOR EACH MATCH IN SELECTED TEXT FOR 2ND LETTER IN 1ST ELS TERM
-   In [1]: DELSO[1].ListOfListsOfIndexMatches[1][0] --> 
-   In [2]: DELSO[1].ListOfListsOfIndexMatches[1][1] --> 
-   In [3]: DELSO[1].ListOfListsOfIndexMatches[1][2] --> 
-   In [4]: DELSO[1].ListOfListsOfIndexMatches[1][3] --> 
-   In [5]: DELSO[1].ListOfListsOfIndexMatches[1][4] --> 
-   In [6]: DELSO[1].ListOfListsOfIndexMatches[1][5] --> 
+   In [1]: DELSO[1].ListOfListsOfIndexMatches[1][0] --> 4
+   In [2]: DELSO[1].ListOfListsOfIndexMatches[1][1] --> 18
+   In [3]: DELSO[1].ListOfListsOfIndexMatches[1][2] --> 47
+   In [4]: DELSO[1].ListOfListsOfIndexMatches[1][3] --> 147
+   In [5]: DELSO[1].ListOfListsOfIndexMatches[1][4] --> 169
+   In [6]: DELSO[1].ListOfListsOfIndexMatches[1][5] --> 245
+   
+   ## 10 == י
+   In [3]: len(DELSO[1].ListOfListsOfIndexMatches[2]) --> 31556 ## NUMBER OF MATCHES FOR 3RD LETTER IN 1ST ELS SEARCH TERM
    
    ## FIRST SIX (6) INDEX POSITION MATCHES (n) FOR EACH MATCH IN SELECTED TEXT FOR 3RD LETTER IN 1ST ELS TERM
-   In [1]: DELSO[1].ListOfListsOfIndexMatches[2][0] --> 
-   In [2]: DELSO[1].ListOfListsOfIndexMatches[2][1] --> 
-   In [3]: DELSO[1].ListOfListsOfIndexMatches[2][2] --> 
-   In [4]: DELSO[1].ListOfListsOfIndexMatches[2][3] --> 
-   In [5]: DELSO[1].ListOfListsOfIndexMatches[2][4] --> 
-   In [6]: DELSO[1].ListOfListsOfIndexMatches[2][5] --> 
+   In [1]: DELSO[1].ListOfListsOfIndexMatches[2][0] --> 5
+   In [2]: DELSO[1].ListOfListsOfIndexMatches[2][1] --> 13
+   In [3]: DELSO[1].ListOfListsOfIndexMatches[2][2] --> 20
+   In [4]: DELSO[1].ListOfListsOfIndexMatches[2][3] --> 35
+   In [5]: DELSO[1].ListOfListsOfIndexMatches[2][4] --> 53
+   In [6]: DELSO[1].ListOfListsOfIndexMatches[2][5] --> 65
+   
+   ## 8 == ח
+   In [4]: len(DELSO[1].ListOfListsOfIndexMatches[3]) --> 7189 ## NUMBER OF MATCHES FOR 4TH LETTER IN 1ST ELS SEARCH TERM
    
    ## FIRST SIX (6) INDEX POSITION MATCHES (n) FOR EACH MATCH IN SELECTED TEXT FOR 4TH LETTER IN 1ST ELS TERM
-   In [1]: DELSO[1].ListOfListsOfIndexMatches[3][0] --> 
-   In [2]: DELSO[1].ListOfListsOfIndexMatches[3][1] --> 
-   In [3]: DELSO[1].ListOfListsOfIndexMatches[3][2] --> 
-   In [4]: DELSO[1].ListOfListsOfIndexMatches[3][3] --> 
-   In [5]: DELSO[1].ListOfListsOfIndexMatches[3][4] --> 
-   In [6]: DELSO[1].ListOfListsOfIndexMatches[3][5] --> 
+   In [1]: DELSO[1].ListOfListsOfIndexMatches[3][0] --> 46
+   In [2]: DELSO[1].ListOfListsOfIndexMatches[3][1] --> 61
+   In [3]: DELSO[1].ListOfListsOfIndexMatches[3][2] --> 69
+   In [4]: DELSO[1].ListOfListsOfIndexMatches[3][3] --> 146
+   In [5]: DELSO[1].ListOfListsOfIndexMatches[3][4] --> 168
+   In [6]: DELSO[1].ListOfListsOfIndexMatches[3][5] --> 196
    
    
    
