@@ -286,9 +286,9 @@ For example:
 Unique Identifier: The 5-Integer Tuple-Key / Tuple-Value
 ----------------
 
-It is this **5th number of this 5-integer tuple-key** of the ``D5`` Object (as well as the 5-integer tuple-value of the ``D5K`` Object) that **serves as the primary key - and thus the unique identifier - ** for every letter object in the selected text(s).
+It is this **5th number of this 5-integer tuple-key** of the ``D5`` Object (as well as the 5-integer tuple-value of the ``D5K`` Object) that serves as the **primary key** - and thus the **unique identifier** - for every letter object in the selected text(s).
 
-It is this 5th integer by which we will **uniquely identify each letter position *n*** in the selected text(s).
+It is this 5th integer by which we will **uniquely identify each letter position (n)** in the selected text(s).
 
 Humans may find it easier to refer to the same letter position *n* by its complete 5-integer tuple-key that allows quick reference to::
 
