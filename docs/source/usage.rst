@@ -292,7 +292,7 @@ It is this 5th integer by which we will uniquely identify each letter position *
 
 Humans may find it easier to refer to the same letter position *n* by its complete 5-integer tuple-key that allows quick reference to::
 
-   (Book#, Chapter#, Verse#, Letter#InVerse, and Letter#InText)
+   ## (Book#, Chapter#, Verse#, Letter#InVerse, and Letter#InText)
 
 **Critical Concept:** For any letter in the selected text(s), it is this **5th integer that is the primary key - and unique identifier -** by which one identify any one Letter Object ``LO`` (see below). Through this letter position index *n*, one can return (via the ``D5K`` Object) the entire 5-integer tuple-key letter position *n* which can then be used to return that specific Hebrew letter (via the ``D5`` Object).
 
