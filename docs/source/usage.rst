@@ -116,7 +116,7 @@ Witztum, Rips, and Rosenberg (WRR 1994) define an Equidistant Letter Sequence (E
 
 WRR define *n* as the start, *d* as the skip between letters in the search-term, and *k* as the length of the ELS. These three parameters uniquely identify the ELS which is denoted (*n*, *d*, *k*).
 
-For example::
+For example, it is reasonable to expect that if anything is to be hidden (and revealed) in the Torah and Hebrew Bible, we expect the terms 'Messiah' and 'The Messiah' to be encoded as ELSs, and specifically within Messianic passages; Therefore we will choose the following as *a priori* ELS search term variables::
 
    ELS1 = 'משיח' == 'Mashiach' == 'Messiah'
 
@@ -131,11 +131,12 @@ For example::
 *n* = index number starting position for each instance for each first (or last) letter in the ELS;
 
 For example, if you are searching for a word that begins (or ends) with the letter Mem (מ/ם) in the text (e.g. משיח), index
-number *n* is the letter position index number(s) for each instance found (i.e. for each letter position index *n*) of the letter Mem (מ/ם), and for each
-instance of these letters Mem (מ/ם) found, there is the potential to find multiple ELSs beginning (or
+number *n* is the letter position index number(s) for each instance found (i.e. for each letter position index *n*) of the letter Mem (מ/ם).
+
+For each instance of these letters Mem (מ/ם) found, there is the potential to find multiple ELSs beginning (or
 ending) on that letter via multiple instance of *d* (see below).
 
-Because the letter Mem (מ) is one of the five Hebrew letters with an alternate form if coming as the final letter (ם) of a word, the central algorithm efficiently handles this eventuality of ELS Searches: instead of search for either ("regular letter form or final letter form") of the two possible letter formats, it is more efficient to convert all Hebrew letters to their equivalent Hebrew Gematria Number values and then search for these integer numbers. 
+Because the letter Mem (מ) is one of the five Hebrew letters with an alternate form if coming as the final letter (ם) of a word, the central algorithm efficiently handles this eventuality for ELS Searches: instead of search for either ("regular letter form or final letter form") of the two possible letter formats, it is more efficient to convert all Hebrew letters to their equivalent Hebrew Gematria Number values and then search for these integer numbers. 
 
 *d* = equidistant skip distance(s) between each letter in the ELS successfully found within the
 selected text that is searched (i.e. for each letter position index number *n*); For each instance of a letter found at letter position index number *n*, there may potentially be multiple instances of skip distances *d* possible to the next letter(s) in that ELS.
@@ -285,13 +286,15 @@ For example:
 Unique Identifier: The 5-Integer Tuple-Key / Tuple-Value
 ----------------
 
-It is this 5th number of this 5-integer tuple-key of the ``D5`` Object (as well as the 5-integer tuple-value of the ``D5K`` Object) that serves as the primary key - and thus the unique identifier - for every letter object in the selected text(s).
+It is this **5th number of this 5-integer tuple-key** of the ``D5`` Object (as well as the 5-integer tuple-value of the ``D5K`` Object) that **serves as the primary key - and thus the unique identifier - ** for every letter object in the selected text(s).
 
 It is this 5th integer by which we will uniquely identify each letter position *n* in the selected text(s).
 
-Humans may find it easier to refer to the same letter position *n* by its complete 5-integer tuple-key that allows quick reference to the Book#, Chapter#, Verse#, Letter#InVerse, and Letter#InText.
+Humans may find it easier to refer to the same letter position *n* by its complete 5-integer tuple-key that allows quick reference to::
 
-**Critical Concept:** For any letter in the selected text(s), it is this 5th integer that is the primary key - and unique identifier - by which one identify any one Letter Object ``LO`` (see below). Through this letter position index *n*, one can return (via the ``D5K`` Object) the entire 5-integer tuple-key letter position *n* which can then be used to return that specific Hebrew letter (via the ``D5`` Object).
+   (Book#, Chapter#, Verse#, Letter#InVerse, and Letter#InText)
+
+**Critical Concept:** For any letter in the selected text(s), it is this **5th integer that is the primary key - and unique identifier -** by which one identify any one Letter Object ``LO`` (see below). Through this letter position index *n*, one can return (via the ``D5K`` Object) the entire 5-integer tuple-key letter position *n* which can then be used to return that specific Hebrew letter (via the ``D5`` Object).
 
 **Key Insight:** Thus if one knows either the letter position *n* via the entire 5-integer tuple-number key/value or simply via the 5th number only, it is possible to retrieve any and all data associated with that unique letter object at that unique letter position *n*.
 
@@ -359,7 +362,7 @@ Humans may find it easier to refer to the same letter position *n* by its comple
    ## LAST FIVE LETTERS OF TORAH: DEUTERONOMY
    S[304845:304850] --> 'ישראל'
 
-Hebrew Gematria Numerical Values
+Hebrew Gematria Number Values
 ----------------
 
 Because of the possibility of five (5) Hebrew letters to have a second, alternate (final letter) form, all Hebrew Unicode letters are converted to their numerical equivalent so that search for ELSs is via Gematria Integer Number value::
@@ -391,10 +394,6 @@ Because of the possibility of five (5) Hebrew letters to have a second, alternat
 
 Each letter's Hebrew Kabbalah Numerical Gematria Value is obtainable by passing a string-sequence to a :py:func:`mod_9A_GetNumberValues4Letters.fn_GetNumberValues` MODULE.FUNCTION() call.
 
-**NOTE:** 
-
-In previous, older versions of Python, Hebrew letters stored in Python memory as the ``L`` Object were right-to-left (R-T-L); However, in development version of Python 3.9+, these same Hebrew letters returned are left-to-right (L-T-R); However, in our version of ``ipython``, they are presented in the UI as R-T-L as shown here; Thus in current versions of Python, the Hebrew letter order is consistent with all other orders in sequences of Strings, Lists, and Tuples, i.e. left-to-right L-T-R. Numbers returned in the ``N`` Object are left-to-right L-T-R, and although they are presented as R-T-L here, they are stored in Python memory as L-T-R.
-
 ``N`` Object - List of Gematria Number Values::
 
    ## 0-BASED INDEX POSITIONS
@@ -410,6 +409,11 @@ In previous, older versions of Python, Hebrew letters stored in Python memory as
    ## LAST FIVE LETTERS OF TORAH: DEUTERONOMY
    L[304845:304850] --> ['י', 'ש', 'ר', 'א', 'ל']
    N[304845:304850] --> [10, 300, 200, 1, 30]
+   
+**NOTE:** 
+
+In previous, older versions of Python, Hebrew letters stored in Python memory as the ``L`` Object were right-to-left (R-T-L); However, in development version of Python 3.9+, these same Hebrew letters returned are left-to-right (L-T-R); However, in our version of ``ipython``, they are presented in the UI as R-T-L as shown here; Thus in current versions of Python, the Hebrew letter order is consistent with all other orders in sequences of Strings, Lists, and Tuples, i.e. left-to-right L-T-R. Numbers returned in the ``N`` Object are left-to-right L-T-R, and although they are presented as R-T-L here, they are stored in Python memory as L-T-R.
+
 
 ``DW`` Object - Dictionary of Words::
 
