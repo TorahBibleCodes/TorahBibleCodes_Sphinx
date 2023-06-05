@@ -18,7 +18,7 @@ To use TorahBibleCodes:
    
 3.) DOWNLOAD the TorahBibleCodes GitHub Repo ZIP file or clone the GitHub repo to your local computer:
 
-GITHUB: https://github.com/torahbiblecodes/torahbiblecodes ::
+GITHUB: https://github.com/torahbiblecodes/torahbiblecodes
 
 .. code-block:: console
 
