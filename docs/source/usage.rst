@@ -150,7 +150,7 @@ Program Concepts: Native Python Data Objects
 
 The essential objects in TorahBibleCodes are native Python data objects (i.e. strings, lists, tuples, and dictionaries).
 
-The source texts are digitized versions of the Leningrad Codex provided by https://Sefaria.org, available here: https://github.com/TorahBibleCodes/Sefaria-Export/tree/master/json/Tanakh
+The source texts are digitized versions of the Leningrad Codex provided by https://Sefaria.org, available here: https://github.com/TorahBibleCodes/Sefaria-Export/tree/master/json/Tanakh .
 
 For any text chosen (e.g. Genesis, Exodus, Leviticus, Numbers, Deuteronomy, or all five (5) books of the Torah together, or all twenty-one (21) books of the Prophets, or all thirteen (13) books of the Writings, or all (or any of) thirty-nine (39) books of the entire Hebrew Bible), the text is parsed and Python dictionary objects ``D`` and ``DS`` are created that allow one to access each verse by 3-digit Tuple-Key (Book, Chapter, Verse).
 
