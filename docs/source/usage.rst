@@ -118,7 +118,7 @@ Witztum, Rips, and Rosenberg (WRR 1994) define an Equidistant Letter Sequence (E
 
 WRR define *n* as the start, *d* as the skip between letters in the search-term, and *k* as the length of the ELS. These three parameters uniquely identify the ELS which is denoted (*n*, *d*, *k*).
 
-As an *a priori* working hypothesis, to test the 'Torah Code Hypothesis' (Haralick: CITE CITATION), let's propose that if anything is to be hidden (and revealed) in the Torah and Hebrew Bible as encoded ELSs, we expect the terms 'Messiah' and 'The Messiah' to be found specifically within the context of Messianic passages; Therefore we will choose the following as initial ELS search term variables to search for::
+As an *a priori* working hypothesis, to test the validity of the 'Torah Code Hypothesis' (Haralick: CITE CITATION), let's propose that if anything is an agreed central concept within both Judaism and Christianity, the terms 'Messiah' and 'The Messiah' are reasonable and logical as initial *a priori* keywords to begin our ELS Search for encoded ELSs within the Torah and Hebrew Bible; Furthermore, as part of defining our scientific criteria for our research experiment(s), we will expect to find these ELS Search Terms specifically within the context of Messianic passages; Therefore we will choose the following as initial ELS search term variables to search for::
 
    ELS1 = 'משיח' == 'Mashiach' == 'Messiah'
 
