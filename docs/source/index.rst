@@ -13,7 +13,7 @@ GITHUB: https://github.com/torahbiblecodes
 
 READTHEDOCS (this page): https://torahbiblecodes-sphinx.readthedocs.io/en/latest/index.html
 
-ACADEMIA: https://www.academia.edu/104334275/TorahBibleCodes_Free_Open_Source_Python_Equidistant_Letter_Sequences_ELS_Hebrew_Bible_Search_Software_PREPRINT_JULY_2023_OF_FORTHCOMING_
+ACADEMIA: 
 
 STACKOVERFLOW: https://stackoverflow.com/users/8911652/torahbiblecodes
 
