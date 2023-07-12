@@ -2,7 +2,7 @@ Welcome to TorahBibleCodes Sphinx documentation!
 ===================================
 
 **TorahBibleCodes** is a Free, Open-Source Python Project
-that enables you to search for hidden Torah Bible Codes in the Hebrew Torah and Bible.
+that enables you to search for hidden Torah Bible Codes in the Hebrew Torah (in both the Koren and Leningrad Codices) and Bible (in the Leningrad Codex).
 We offer a *simple* and *intuitive* App (and API) that is both *free* and *open-source*.
 
 Please visit our web site, GitHub, StackOverflow, YouTube, Rumble, Twitter, and GiveSendGo.
