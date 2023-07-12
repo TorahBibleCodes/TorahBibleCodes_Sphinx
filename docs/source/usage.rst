@@ -50,8 +50,26 @@ After your ``ipython`` interactive python (IPython) development environment has 
 
 4.) Type ``%run p.py`` at the ``ipython`` (IPython) command prompt.
 
+
 You will be prompted to select a text from the Hebrew Bible via the :py:func:`fn_GetUserInput` function.
 
+
+For example::
+
+   C:\TorahBibleCodes> ipython
+   
+   In [1]: %run p.py
+   
+   WITHIN FUNCTION:  BEGIN FUNCTION #1A - GET USER INPUT; CHOOSE CODEX TO SEARCH
+
+   Please select Hebrew Bible codex to search:
+
+   1 - Koren - Claremont Michigan Transliteration
+   2 - Leningrad Codex
+
+   Please select codex to search:
+
+After choosing the Codex, you will be prompted to select a text from the Hebrew Bible via the :py:func:`fn_GetUserInput` function.
 
 For example::
 
