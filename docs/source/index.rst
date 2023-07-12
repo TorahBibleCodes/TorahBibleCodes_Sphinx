@@ -5,13 +5,15 @@ Welcome to TorahBibleCodes Sphinx documentation!
 that enables you to search for hidden Torah Bible Codes in the Hebrew Torah (in both the Koren and Leningrad Codices) and Bible (in the Leningrad Codex).
 We offer a *simple* and *intuitive* App (and API) that is both *free* and *open-source*.
 
-Please visit our web site, GitHub, StackOverflow, YouTube, Rumble, Twitter, and GiveSendGo.
+Please visit our web site, GitHub, Academia, StackOverflow, YouTube, Rumble, Twitter, and GiveSendGo.
 
 HOMEPAGE URL: https://TorahBibleCodes.com
 
 GITHUB: https://github.com/torahbiblecodes
 
 READTHEDOCS (this page): https://torahbiblecodes-sphinx.readthedocs.io/en/latest/index.html
+
+ACADEMIA: https://www.academia.edu/104334275/TorahBibleCodes_Free_Open_Source_Python_Equidistant_Letter_Sequences_ELS_Hebrew_Bible_Search_Software_PREPRINT_JULY_2023_OF_FORTHCOMING_
 
 STACKOVERFLOW: https://stackoverflow.com/users/8911652/torahbiblecodes
 
