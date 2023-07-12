@@ -72,12 +72,8 @@ For example::
 After choosing the Codex, you will be prompted to select a text from the Hebrew Bible via the :py:func:`fn_GetUserInput` function.
 
 For example::
-
-   C:\TorahBibleCodes> ipython
    
-   In [1]: %run p.py
-   
-   WITHIN FUNCTION:  BEGIN FUNCTION #1 - GET USER INPUT; CHOOSE TEXT TO SEARCH
+   WITHIN FUNCTION:  BEGIN FUNCTION #1B - GET USER INPUT; CHOOSE TEXT TO SEARCH
    
    Please select text to search:
    
