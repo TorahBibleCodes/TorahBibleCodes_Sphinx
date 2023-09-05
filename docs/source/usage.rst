@@ -20,15 +20,7 @@ A.) INSTALL ``ipython`` interactive python (IPython) development environment via
 
 B.) INSTALL the ``numpy`` library via ``pip install`` at the command prompt.
 
-.. code-block:: console
 
-   C:\python> pip install numpy
-
-C.) INSTALL the ``pandas`` library via ``pip install`` at the command prompt.
-
-.. code-block:: console
-
-   C:\python> pip install pandas
 
    
 3.) DOWNLOAD the TorahBibleCodes GitHub Repo ZIP file or clone the GitHub repo to your local computer:
