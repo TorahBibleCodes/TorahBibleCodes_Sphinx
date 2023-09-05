@@ -24,7 +24,7 @@ B.) INSTALL the ``numpy`` library via ``pip install`` at the command prompt.
 
    C:\python> pip install numpy
 
-B.) INSTALL the ``pandas`` library via ``pip install`` at the command prompt.
+C.) INSTALL the ``pandas`` library via ``pip install`` at the command prompt.
 
 .. code-block:: console
 
