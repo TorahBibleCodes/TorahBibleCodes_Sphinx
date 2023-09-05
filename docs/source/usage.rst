@@ -12,17 +12,12 @@ To use TorahBibleCodes:
 
 2.) In the folder where Python has been installed, Open a Command Line Interface (CLI) such as Windows PowerShell or the equivalent on other Apple and Linux devices, and then
 
-A.) INSTALL ``ipython`` interactive python (IPython) development environment via ``pip install`` at the command prompt.
+A.) INSTALL TEST ``ipython`` interactive python (IPython) development environment via ``pip install`` at the command prompt.
 
 .. code-block:: console
 
    C:\python> pip install ipython
 
-B.) INSTALL the ``numpy`` library via ``pip install`` at the command prompt.
-
-
-
-   
 3.) DOWNLOAD the TorahBibleCodes GitHub Repo ZIP file or clone the GitHub repo to your local computer:
 
 GITHUB: https://github.com/torahbiblecodes/torahbiblecodes
